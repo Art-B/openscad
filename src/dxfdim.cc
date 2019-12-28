@@ -25,13 +25,13 @@
  */
 
 #include "dxfdim.h"
-#include "value.h"
-#include "function.h"
+#include "engine/value.h"
+#include "engine/function.h"
 #include "dxfdata.h"
-#include "builtin.h"
+#include "engine/builtin.h"
 #include "printutils.h"
 #include "fileutils.h"
-#include "evalcontext.h"
+#include "engine/evalcontext.h"
 #include "handle_dep.h"
 #include "degree_trig.h"
 

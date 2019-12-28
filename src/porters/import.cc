@@ -27,15 +27,15 @@
 #include "import.h"
 #include "importnode.h"
 
-#include "module.h"
-#include "ModuleInstantiation.h"
+#include "engine/module.h"
+#include "engine/ModuleInstantiation.h"
 #include "polyset.h"
 #ifdef ENABLE_CGAL
 #include "CGAL_Nef_polyhedron.h"
 #endif
 #include "Polygon2d.h"
-#include "evalcontext.h"
-#include "builtin.h"
+#include "engine/evalcontext.h"
+#include "engine/builtin.h"
 #include "dxfdata.h"
 #include "printutils.h"
 #include "fileutils.h"

@@ -1,7 +1,7 @@
 #include "parameterset.h"
-#include "comment.h"
-#include "modcontext.h"
-#include "expression.h"
+#include "engine/comment.h"
+#include "engine/modcontext.h"
+#include "engine/expression.h"
 #include "printutils.h"
 #include <boost/property_tree/json_parser.hpp>
 #include "boost-utils.h"

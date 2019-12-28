@@ -1,8 +1,8 @@
 #include "parameterobject.h"
 
-#include "module.h"
-#include "modcontext.h"
-#include "annotation.h"
+#include "engine/module.h"
+#include "engine/modcontext.h"
+#include "engine/annotation.h"
 
 ParameterObject::ParameterObject(std::shared_ptr<Context> ctx, const shared_ptr<Assignment> &assignment, const ValuePtr defaultValue)
 {

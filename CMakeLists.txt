@@ -408,10 +408,10 @@ include_directories("src/ext/libtess2/Include")
 # NOTE: To keep HEADLESS builds working, do NOT add Qt-dependent sources here,
 #       see GUI_SOURCES list below for that.
 set(CORE_SOURCES
-  src/annotation.cc
+  src/engine/annotation.cc
   src/boost-utils.cc
-  src/builtin.cc
-  src/builtincontext.cc
+  src/engine/builtin.cc
+  src/engine/builtincontext.cc
   src/calc.cc
   src/cgaladv.cc
   src/clipper-utils.cc
@@ -425,33 +425,33 @@ set(CORE_SOURCES
   src/degree_trig.cc
   src/dxfdata.cc
   src/dxfdim.cc
-  src/evalcontext.cc
-  src/export.cc
-  src/export_3mf.cc
-  src/export_amf.cc
-  src/export_dxf.cc
-  src/export_off.cc
-  src/export_pdf.cc
-  src/export_stl.cc
-  src/export_svg.cc
-  src/expr.cc
+  src/engine/evalcontext.cc
+  src/porters/export.cc
+  src/porters/export_3mf.cc
+  src/porters/export_amf.cc
+  src/porters/export_dxf.cc
+  src/porters/export_off.cc
+  src/porters/export_pdf.cc
+  src/porters/export_stl.cc
+  src/porters/export_svg.cc
+  src/engine/expr.cc
   src/feature.cc
   src/fileutils.cc
-  src/func.cc
-  src/function.cc
+  src/engine/func.cc
+  src/engine/function.cc
   src/handle_dep.cc
   src/hash.cc
-  src/import.cc
-  src/import_3mf.cc
-  src/import_amf.cc
-  src/import_stl.cc
-  src/import_off.cc
-  src/import_svg.cc
+  src/porters/import.cc
+  src/porters/import_3mf.cc
+  src/porters/import_amf.cc
+  src/porters/import_stl.cc
+  src/porters/import_off.cc
+  src/porters/import_svg.cc
   src/linalg.cc
   src/linearextrude.cc
-  src/localscope.cc
-  src/modcontext.cc
-  src/module.cc
+  src/engine/localscope.cc
+  src/engine/modcontext.cc
+  src/engine/module.cc
   src/node.cc
   src/nodedumper.cc
   src/offset.cc
@@ -470,29 +470,29 @@ set(CORE_SOURCES
   src/svg.cc
   src/text.cc
   src/transform.cc
-  src/value.cc
+  src/engine/value.cc
   src/version.cc
-  src/Assignment.cc
-  src/AST.cc
+  src/engine/Assignment.cc
+  src/engine/AST.cc
   src/Camera.cc
   src/CSGTreeNormalizer.cc
   src/DrawingCallback.cc
-  src/FileModule.cc
-  src/FontCache.cc
-  src/FreetypeRenderer.cc
+  src/engine/FileModule.cc
+  src/gui/FontCache.cc
+  src/gui/FreetypeRenderer.cc
   src/Geometry.cc
   src/GeometryCache.cc
   src/GeometryUtils.cc
-  src/GroupModule.cc
+  src/engine/GroupModule.cc
   src/LibraryInfo.cc
-  src/ModuleInstantiation.cc
+  src/engine/ModuleInstantiation.cc
   src/ModuleCache.cc
   src/NodeVisitor.cc
   src/PlatformUtils.cc
   src/Polygon2d.cc
   src/RenderStatistic.cc
   src/StatCache.cc
-  src/UserModule.cc
+  src/engine/UserModule.cc
   src/Tree.cc
   src/ext/lodepng/lodepng.cpp
   src/ext/polyclipping/clipper.cpp
@@ -532,8 +532,8 @@ set(CGAL_SOURCES
   src/cgalutils-polyhedron.cc
   src/cgalutils-project.cc
   src/cgalutils-tess.cc
-  src/export_nef.cc
-  src/import_nef.cc
+  src/porters/export_nef.cc
+  src/porters/import_nef.cc
   src/CGAL_Nef_polyhedron.cc
   src/CGALCache.cc
   src/CSGTreeEvaluator.cc
@@ -556,14 +556,14 @@ if(NULLGL)
     src/${OFFSCREEN_IMGUTILS_SOURCE})
 else()
   set(OFFSCREEN_SOURCES
-    src/export_png.cc
+    src/porters/export_png.cc
     src/fbo.cc
     src/imageutils.cc
     src/render.cc
     src/renderer.cc
     src/system-gl.cc
     src/CGALRenderer.cc
-    src/GLView.cc
+    src/gui/GLView.cc
     src/OffscreenView.cc
     src/OpenCSGRenderer.cc
     src/ThrownTogetherRenderer.cc)
@@ -582,38 +582,38 @@ set(INPUT_DRIVER_SOURCES
 set(GUI_SOURCES
   ${GUI_SOURCES}
   src/cgalworker.cc
-  src/editor.cc
+  src/gui/editor.cc
   src/initConfig.cc
-  src/launchingscreen.cc
-  src/mainwin.cc
+  src/gui/launchingscreen.cc
+  src/gui/mainwin.cc
   src/mouseselector.cc
   src/scadapi.cc
   src/scadlexer.cpp
   src/scintillaeditor.cpp
   src/settings.cc
-  src/tabmanager.cc
-  src/tabwidget.cc
+  src/gui/tabmanager.cc
+  src/gui/tabwidget.cc
   src/AutoUpdater.cc
-  src/Console.cc
-  src/Dock.cc
-  src/ErrorLog.cc
+  src/gui/Console.cc
+  src/gui/Dock.cc
+  src/gui/ErrorLog.cc
   src/EventFilter.h
-  src/FontListDialog.cc
-  src/FontListTableView.cc
-  src/LibraryInfoDialog.cc
+  src/gui/FontListDialog.cc
+  src/gui/FontListTableView.cc
+  src/gui/LibraryInfoDialog.cc
   src/OctoPrint.cc
-  src/OpenCSGWarningDialog.cc
+  src/gui/OpenCSGWarningDialog.cc
   src/OpenSCADApp.cc
-  src/Preferences.cc
-  src/PrintInitDialog.cc
+  src/gui/Preferences.cc
+  src/gui/PrintInitDialog.cc
   src/PrintService.cc
-  src/ProgressWidget.cc
-  src/QGLView.cc
-  src/QSettingsCached.cc
-  src/QWordSearchField.cc
+  src/gui/ProgressWidget.cc
+  src/gui/QGLView.cc
+  src/gui/QSettingsCached.cc
+  src/gui/QWordSearchField.cc
   src/SettingsWriter.cc
-  src/UIUtils.cc
-  src/WindowManager.cc
+  src/gui/UIUtils.cc
+  src/gui/WindowManager.cc
   src/parameter/groupwidget.cpp
   src/parameter/ignoreWheelWhenNotFocused.cpp
   src/parameter/parametercheckbox.cpp
@@ -637,8 +637,8 @@ set(GUI_SOURCES
 
 # header-only code
 set(GUI_HEADERS
-  src/AboutDialog.h
-  src/MainWindow.h
+  src/gui/AboutDialog.h
+  src/gui/MainWindow.h
   src/Network.h
   src/NetworkSignal.h
   )

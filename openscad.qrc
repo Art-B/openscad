@@ -1,7 +1,7 @@
 <RCC>
   <qresource prefix="/">
     <file>icons/prefs3DPrint.png</file>
-    <file>src/PrintInitDialog.html</file>
+    <file>src/gui/PrintInitDialog.html</file>
     <file>src/OctoPrintInfo.html</file>
     <file>icons/prefsInput.png</file>
     <file>icons/prefsInputAxis.png</file>
@@ -35,7 +35,7 @@
     <file>icons/prefs3DView.png</file>
     <file>icons/prefsEditor.png</file>
     <file>icons/prefsUpdate.png</file>
-    <file>src/AboutDialog.html</file>
+    <file>src/gui/AboutDialog.html</file>
     <file>images/export.png</file>
     <file>images/axes.png</file>
     <file>images/export-white.png</file>

@@ -68,7 +68,7 @@ deploy {
 snapshot {
   DEFINES += OPENSCAD_SNAPSHOT
 }
-# add CONFIG+=idprefix to the qmake command-line to debug node ID's in csg output
+# add CONFIG+=idprefix to the qmake command-line to debug node IDs in csg output
 idprefix {
   DEFINES += IDPREFIX
   message("Setting IDPREFIX for csg debugging")
@@ -228,52 +228,52 @@ RESOURCES = openscad.qrc
 load(uic)
 uic.commands += -tr q_
 
-FORMS   += src/MainWindow.ui \
-           src/ErrorLog.ui \
-           src/Preferences.ui \
-           src/OpenCSGWarningDialog.ui \
-           src/AboutDialog.ui \
-           src/FontListDialog.ui \
-           src/PrintInitDialog.ui \
-           src/ProgressWidget.ui \
-           src/launchingscreen.ui \
-           src/LibraryInfoDialog.ui \
-           src/Console.ui \
+FORMS   += src/gui/MainWindow.ui \
+           src/gui/ErrorLog.ui \
+           src/gui/Preferences.ui \
+           src/gui/OpenCSGWarningDialog.ui \
+           src/gui/AboutDialog.ui \
+           src/gui/FontListDialog.ui \
+           src/gui/PrintInitDialog.ui \
+           src/gui/ProgressWidget.ui \
+           src/gui/launchingscreen.ui \
+           src/gui/LibraryInfoDialog.ui \
+           src/gui/Console.ui \
            src/parameter/ParameterWidget.ui \
            src/parameter/ParameterEntryWidget.ui \
            src/input/ButtonConfigWidget.ui \
            src/input/AxisConfigWidget.ui
 
 # AST nodes
-FLEXSOURCES += src/lexer.l 
-BISONSOURCES += src/parser.y
+FLEXSOURCES += src/engine/lexer.l
+BISONSOURCES += src/engine/parser.y
 
-HEADERS += src/AST.h \
-           src/ModuleInstantiation.h \
-           src/Package.h \
-           src/Assignment.h \
-           src/expression.h \
-           src/function.h \
-           src/module.h \           
-           src/UserModule.h \
+HEADERS += src/engine/AST.h \
+           src/engine/ModuleInstantiation.h \
+           src/engine/Package.h \
+           src/engine/Assignment.h \
+           src/engine/expression.h \
+           src/engine/function.h \
+           src/engine/module.h \
+           src/engine/UserModule.h \
 
-SOURCES += src/AST.cc \
-           src/ModuleInstantiation.cc \
-           src/Assignment.cc \
-           src/export_pdf.cc \
-           src/expr.cc \
-           src/function.cc \
-           src/module.cc \
-           src/UserModule.cc \
-           src/annotation.cc
+SOURCES += src/engine/AST.cc \
+           src/engine/ModuleInstantiation.cc \
+           src/engine/Assignment.cc \
+           src/porters/export_pdf.cc \
+           src/engine/expr.cc \
+           src/engine/function.cc \
+           src/engine/module.cc \
+           src/engine/UserModule.cc \
+           src/engine/annotation.cc
 
 # Comment parser
-FLEXSOURCES += src/comment_lexer.l
-BISONSOURCES += src/comment_parser.y
+FLEXSOURCES += src/engine/comment_lexer.l
+BISONSOURCES += src/engine/comment_parser.y
 
 HEADERS += src/version_check.h \
            src/version_helper.h \
-           src/ProgressWidget.h \
+           src/gui/ProgressWidget.h \
            src/parsersettings.h \
            src/renderer.h \
            src/settings.h \
@@ -281,41 +281,41 @@ HEADERS += src/version_check.h \
            src/colormap.h \
            src/ThrownTogetherRenderer.h \
            src/CGAL_OGL_Polyhedron.h \
-           src/QGLView.h \
-           src/GLView.h \
-           src/MainWindow.h \
-           src/tabmanager.h \
-           src/tabwidget.h \
+           src/gui/QGLView.h \
+           src/gui/GLView.h \
+           src/gui/MainWindow.h \
+           src/gui/tabmanager.h \
+           src/gui/tabwidget.h \
            src/OpenSCADApp.h \
-           src/WindowManager.h \
+           src/gui/WindowManager.h \
            src/initConfig.h \
-           src/Preferences.h \
+           src/gui/Preferences.h \
            src/SettingsWriter.h \
-           src/OpenCSGWarningDialog.h \
-           src/AboutDialog.h \
-           src/FontListDialog.h \
-           src/FontListTableView.h \
-           src/GroupModule.h \
-           src/FileModule.h \
+           src/gui/OpenCSGWarningDialog.h \
+           src/gui/AboutDialog.h \
+           src/gui/FontListDialog.h \
+           src/gui/FontListTableView.h \
+           src/engine/GroupModule.h \
+           src/engine/FileModule.h \
            src/StatCache.h \
            src/scadapi.h \
-           src/builtin.h \
+           src/engine/builtin.h \
            src/calc.h \
-           src/context.h \
-           src/builtincontext.h \
-           src/modcontext.h \
-           src/evalcontext.h \
+           src/engine/context.h \
+           src/engine/builtincontext.h \
+           src/engine/modcontext.h \
+           src/engine/evalcontext.h \
            src/csgops.h \
            src/CSGTreeNormalizer.h \
            src/CSGTreeEvaluator.h \
            src/dxfdata.h \
            src/dxfdim.h \
-           src/export.h \
+           src/porters/export.h \
            src/stackcheck.h \
-           src/exceptions.h \
+           src/engine/exceptions.h \
            src/grid.h \
            src/hash.h \
-           src/localscope.h \
+           src/engine/localscope.h \
            src/feature.h \
            src/node.h \
            src/csgnode.h \
@@ -325,7 +325,7 @@ HEADERS += src/version_check.h \
            src/projectionnode.h \
            src/cgaladvnode.h \
            src/importnode.h \
-           src/import.h \
+           src/porters/import.h \
            src/transformnode.h \
            src/colornode.h \
            src/rendernode.h \
@@ -341,9 +341,9 @@ HEADERS += src/version_check.h \
            src/polyset.h \
            src/printutils.h \
            src/fileutils.h \
-           src/value.h \
+           src/engine/value.h \
            src/progress.h \
-           src/editor.h \
+           src/gui/editor.h \
            src/NodeVisitor.h \
            src/state.h \
            src/nodecache.h \
@@ -353,8 +353,8 @@ HEADERS += src/version_check.h \
            src/GeometryEvaluator.h \
            src/Tree.h \
            src/DrawingCallback.h \
-           src/FreetypeRenderer.h \
-           src/FontCache.h \
+           src/gui/FreetypeRenderer.h \
+           src/gui/FontCache.h \
            src/memory.h \
            src/linalg.h \
            src/Camera.h \
@@ -373,14 +373,14 @@ HEADERS += src/version_check.h \
            src/system-gl.h \
            src/CsgInfo.h \
            \
-           src/Dock.h \
-           src/Console.h \
-           src/ErrorLog.h \
+           src/gui/Dock.h \
+           src/gui/Console.h \
+           src/gui/ErrorLog.h \
            src/AutoUpdater.h \
-           src/launchingscreen.h \
-           src/LibraryInfoDialog.h \
+           src/gui/launchingscreen.h \
+           src/gui/LibraryInfoDialog.h \
            \
-           src/comment.h\
+           src/engine/comment.h\
            \
            src/parameter/ParameterWidget.h \
            src/parameter/parameterobject.h \
@@ -395,8 +395,8 @@ HEADERS += src/version_check.h \
            src/parameter/groupwidget.h \
            src/parameter/parameterset.h \
            src/parameter/ignoreWheelWhenNotFocused.h \
-           src/QWordSearchField.h \
-           src/QSettingsCached.h \
+           src/gui/QWordSearchField.h \
+           src/gui/QSettingsCached.h \
            src/input/InputDriver.h \
            src/input/InputEventMapper.h \
            src/input/InputDriverManager.h \
@@ -425,20 +425,20 @@ SOURCES += \
            src/version_check.cc
 
 SOURCES += \
-           src/ProgressWidget.cc \
+           src/gui/ProgressWidget.cc \
            src/linalg.cc \
            src/Camera.cc \
            src/handle_dep.cc \
-           src/value.cc \
+           src/engine/value.cc \
            src/degree_trig.cc \
-           src/func.cc \
-           src/localscope.cc \
+           src/engine/func.cc \
+           src/engine/localscope.cc \
            src/feature.cc \
            src/node.cc \
-           src/context.cc \
-           src/builtincontext.cc \
-           src/modcontext.cc \
-           src/evalcontext.cc \
+           src/engine/context.cc \
+           src/engine/builtincontext.cc \
+           src/engine/modcontext.cc \
+           src/engine/evalcontext.cc \
            src/csgnode.cc \
            src/CSGTreeNormalizer.cc \
            src/CSGTreeEvaluator.cc \
@@ -455,7 +455,7 @@ SOURCES += \
            src/projection.cc \
            src/cgaladv.cc \
            src/surface.cc \
-           src/control.cc \
+           src/engine/control.cc \
            src/render.cc \
            src/text.cc \
            src/dxfdata.cc \
@@ -479,42 +479,42 @@ SOURCES += \
            src/GeometryCache.cc \
            src/Tree.cc \
 	       src/DrawingCallback.cc \
-	       src/FreetypeRenderer.cc \
-	       src/FontCache.cc \
+	       src/gui/FreetypeRenderer.cc \
+	       src/gui/FontCache.cc \
            \
            src/settings.cc \
            src/rendersettings.cc \
            src/initConfig.cc \
-           src/Preferences.cc \
+           src/gui/Preferences.cc \
            src/SettingsWriter.cc \
-           src/OpenCSGWarningDialog.cc \
-           src/editor.cc \
-           src/GLView.cc \
-           src/QGLView.cc \
+           src/gui/OpenCSGWarningDialog.cc \
+           src/gui/editor.cc \
+           src/gui/GLView.cc \
+           src/gui/QGLView.cc \
            src/AutoUpdater.cc \
            \
            src/hash.cc \
-           src/GroupModule.cc \
-           src/FileModule.cc \
+           src/engine/GroupModule.cc \
+           src/engine/FileModule.cc \
            src/StatCache.cc \
            src/scadapi.cc \
-           src/builtin.cc \
+           src/engine/builtin.cc \
            src/calc.cc \
-           src/export.cc \
-           src/export_stl.cc \
-           src/export_amf.cc \
-           src/export_3mf.cc \
-           src/export_off.cc \
-           src/export_dxf.cc \
-           src/export_svg.cc \
-           src/export_nef.cc \
-           src/export_png.cc \
-           src/import.cc \
-           src/import_stl.cc \
-           src/import_off.cc \
-           src/import_svg.cc \
-           src/import_amf.cc \
-           src/import_3mf.cc \
+           src/porters/export.cc \
+           src/porters/export_stl.cc \
+           src/porters/export_amf.cc \
+           src/porters/export_3mf.cc \
+           src/porters/export_off.cc \
+           src/porters/export_dxf.cc \
+           src/porters/export_svg.cc \
+           src/porters/export_nef.cc \
+           src/porters/export_png.cc \
+           src/porters/import.cc \
+           src/porters/import_stl.cc \
+           src/porters/import_off.cc \
+           src/porters/import_svg.cc \
+           src/porters/import_amf.cc \
+           src/porters/import_3mf.cc \
            src/renderer.cc \
            src/colormap.cc \
            src/ThrownTogetherRenderer.cc \
@@ -526,21 +526,21 @@ SOURCES += \
            \
            src/version.cc \
            src/openscad.cc \
-           src/mainwin.cc \
-           src/tabmanager.cc \
-           src/tabwidget.cc \
+           src/gui/mainwin.cc \
+           src/gui/tabmanager.cc \
+           src/gui/tabwidget.cc \
            src/OpenSCADApp.cc \
-           src/WindowManager.cc \
-           src/UIUtils.cc \
-           src/Dock.cc \
-           src/Console.cc \
-           src/ErrorLog.cc \
-           src/FontListDialog.cc \
-           src/FontListTableView.cc \
-           src/launchingscreen.cc \
-           src/LibraryInfoDialog.cc\
+           src/gui/WindowManager.cc \
+           src/gui/UIUtils.cc \
+           src/gui/Dock.cc \
+           src/gui/Console.cc \
+           src/gui/ErrorLog.cc \
+           src/gui/FontListDialog.cc \
+           src/gui/FontListTableView.cc \
+           src/gui/launchingscreen.cc \
+           src/gui/LibraryInfoDialog.cc\
            \
-           src/comment.cpp \
+           src/engine/comment.cpp \
            src/mouseselector.cc \
            \
            src/parameter/ParameterWidget.cc\
@@ -556,8 +556,8 @@ SOURCES += \
            src/parameter/parameterset.cpp \
            src/parameter/parametervirtualwidget.cpp \
            src/parameter/ignoreWheelWhenNotFocused.cpp \
-           src/QWordSearchField.cc\
-           src/QSettingsCached.cc \
+           src/gui/QWordSearchField.cc\
+           src/gui/QSettingsCached.cc \
            \
            src/input/InputDriver.cc \
            src/input/InputEventMapper.cc \
@@ -597,8 +597,8 @@ HEADERS += src/ext/libtess2/Include/tesselator.h \
            src/ext/libtess2/Source/tess.h
 
 has_qt5 {
-  HEADERS += src/Network.h src/NetworkSignal.h src/PrintService.h src/OctoPrint.h src/PrintInitDialog.h
-  SOURCES += src/PrintService.cc src/OctoPrint.cc src/PrintInitDialog.cc
+  HEADERS += src/Network.h src/NetworkSignal.h src/PrintService.h src/OctoPrint.h src/gui/PrintInitDialog.h
+  SOURCES += src/PrintService.cc src/OctoPrint.cc src/gui/PrintInitDialog.cc
 }
 
 has_qt5:unix:!macx {
@@ -665,7 +665,7 @@ SOURCES += src/cgalutils.cc \
            src/CGAL_Nef_polyhedron.cc \
            src/cgalworker.cc \
            src/Polygon2d-CGAL.cc \
-           src/import_nef.cc
+           src/porters/import_nef.cc
 }
 
 macx {

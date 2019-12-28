@@ -32,9 +32,9 @@
 #include "handle_dep.h"
 #include "printutils.h"
 #include "parsersettings.h"
-#include "Assignment.h"
+#include "engine/Assignment.h"
 #include "parser.hxx"
-#include "FileModule.h"
+#include "engine/FileModule.h"
 #include <assert.h>
 #include <boost/lexical_cast.hpp>
 #include <boost/filesystem.hpp>

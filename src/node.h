@@ -4,10 +4,9 @@
 #include <string>
 #include <deque>
 #include "BaseVisitable.h"
-#include "AST.h"
+#include "engine/AST.h"
 
 extern int progress_report_count;
-extern void (*progress_report_f)(const class AbstractNode*, void*, int);
 extern void *progress_report_vp;
 
 void progress_report_prep(class AbstractNode *root, void (*f)(const class AbstractNode *node, void *vp, int mark), void *vp);

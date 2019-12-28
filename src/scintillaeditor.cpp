@@ -11,14 +11,12 @@
 #include <Qsci/qscicommandset.h>
 
 #include "scintillaeditor.h"
-#include "Preferences.h"
+#include "gui/Preferences.h"
 #include "PlatformUtils.h"
 #include "settings.h"
-#include "QSettingsCached.h"
-
+#include "gui/QSettingsCached.h"
 #include <QWheelEvent>
-#include<QPoint>
-
+#include <QPoint>
 namespace fs=boost::filesystem;
 
 const QString ScintillaEditor::cursorPlaceHolder = "^~^";
@@ -296,7 +294,7 @@ void ScintillaEditor::applySettings()
 	{
 		qsci->setAutoCompletionSource(QsciScintilla::AcsAPIs);
 		qsci->setAutoCompletionFillupsEnabled(false);
- 		qsci->setAutoCompletionFillups("(");		
+ 		qsci->setAutoCompletionFillups("(");
 		qsci->setCallTipsVisible(10);
 		qsci->setCallTipsStyle(QsciScintilla::CallTipsContext);
 	}
@@ -785,7 +783,7 @@ QString ScintillaEditor::selectedText()
 bool ScintillaEditor::eventFilter(QObject *obj, QEvent *e)
 {
 	bool enableNumberScrollWheel = Settings::Settings::inst()->get(Settings::Settings::enableNumberScrollWheel).toBool();
-	
+
 	if(obj == qsci->viewport() && enableNumberScrollWheel)
 	{
 		if(e->type() == QEvent::Wheel)
@@ -989,7 +987,7 @@ bool ScintillaEditor::handleKeyEventNavigateNumber(QKeyEvent *keyEvent)
 bool ScintillaEditor::handleWheelEventNavigateNumber (QWheelEvent *wheelEvent)
 {
 	auto modifierNumberScrollWheel = Settings::Settings::inst()->get(Settings::Settings::modifierNumberScrollWheel).toString();
-	bool modifier;	
+	bool modifier;
 	static bool wasChanged = false;
 	static bool previewAfterUndo = false;
 
@@ -1003,7 +1001,7 @@ bool ScintillaEditor::handleWheelEventNavigateNumber (QWheelEvent *wheelEvent)
 	}
 	else
 	{
-		modifier = (wheelEvent->buttons() & Qt::LeftButton) | (wheelEvent->modifiers() & Qt::AltModifier);	
+		modifier = (wheelEvent->buttons() & Qt::LeftButton) | (wheelEvent->modifiers() & Qt::AltModifier);
 	}
 
 	if (modifier)
@@ -1012,7 +1010,7 @@ bool ScintillaEditor::handleWheelEventNavigateNumber (QWheelEvent *wheelEvent)
 
 		if (wheelEvent->delta() < 0)
 		{
-			if (modifyNumber(Qt::Key_Down)) 
+			if (modifyNumber(Qt::Key_Down))
 			{
 				wasChanged = true;
 				previewAfterUndo = true;
@@ -1117,7 +1115,7 @@ bool ScintillaEditor::modifyNumber(int key)
 	auto exponent=tail-((dotpos>=curpos)?1:0);
 	long long int step=Preferences::inst()->getValue("editor/stepSize").toInt();
 	for (int i=exponent; i>0; i--) step*=10;
-	
+
 	switch (key) {
 		case Qt::Key_Up:   number+=step; break;
 		case Qt::Key_Down: number-=step; break;

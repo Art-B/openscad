@@ -1,8 +1,8 @@
 #pragma once
 
-#include "value.h"
-#include "Assignment.h"
-#include "expression.h"
+#include "engine/value.h"
+#include "engine/Assignment.h"
+#include "engine/expression.h"
 
 #include <QString>
 

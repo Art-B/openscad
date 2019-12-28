@@ -1,7 +1,7 @@
 #pragma once
 
 #include "node.h"
-#include "value.h"
+#include "engine/value.h"
 
 class LinearExtrudeNode : public AbstractPolyNode
 {

@@ -20,14 +20,14 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USAvalcon
  *
  */
 
-#include "evalcontext.h"
+#include "engine/evalcontext.h"
 #include "node.h"
-#include "module.h"
-#include "ModuleInstantiation.h"
+#include "engine/module.h"
+#include "engine/ModuleInstantiation.h"
 #include "progress.h"
 #include "printutils.h"
 #include <functional>

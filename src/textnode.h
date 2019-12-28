@@ -1,9 +1,9 @@
 #pragma once
 
 #include "node.h"
-#include "value.h"
+#include "engine/value.h"
 
-#include "FreetypeRenderer.h"
+#include "gui/FreetypeRenderer.h"
 
 class TextModule;
 

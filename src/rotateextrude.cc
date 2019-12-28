@@ -25,12 +25,12 @@
  */
 
 #include "rotateextrudenode.h"
-#include "module.h"
-#include "ModuleInstantiation.h"
-#include "evalcontext.h"
+#include "engine/module.h"
+#include "engine/ModuleInstantiation.h"
+#include "engine/evalcontext.h"
 #include "printutils.h"
 #include "fileutils.h"
-#include "builtin.h"
+#include "engine/builtin.h"
 #include "polyset.h"
 #include "handle_dep.h"
 #include "boost-utils.h"

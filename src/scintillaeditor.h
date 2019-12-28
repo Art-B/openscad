@@ -12,7 +12,7 @@
 #include <QVBoxLayout>
 #include <Qsci/qsciscintilla.h>
 
-#include "editor.h"
+#include "gui/editor.h"
 #include "memory.h"
 #include "scadapi.h"
 #include "scadlexer.h"

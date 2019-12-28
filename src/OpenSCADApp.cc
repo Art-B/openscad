@@ -1,5 +1,5 @@
 #include "OpenSCADApp.h"
-#include "MainWindow.h"
+#include "gui/MainWindow.h"
 #ifdef Q_OS_MAC
 #include "EventFilter.h"
 #endif
@@ -7,7 +7,7 @@
 #include <QProgressDialog>
 #include <iostream>
 #include <boost/foreach.hpp>
-#include "QSettingsCached.h"
+#include "gui/QSettingsCached.h"
 
 OpenSCADApp::OpenSCADApp(int &argc ,char **argv)
 	: QApplication(argc, argv), fontCacheDialog(nullptr)

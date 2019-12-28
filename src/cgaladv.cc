@@ -25,10 +25,10 @@
  */
 
 #include "cgaladvnode.h"
-#include "module.h"
-#include "ModuleInstantiation.h"
-#include "evalcontext.h"
-#include "builtin.h"
+#include "engine/module.h"
+#include "engine/ModuleInstantiation.h"
+#include "engine/evalcontext.h"
+#include "engine/builtin.h"
 #include "polyset.h"
 #include <sstream>
 #include <assert.h>

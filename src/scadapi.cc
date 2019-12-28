@@ -1,5 +1,5 @@
 #include "scadapi.h"
-#include "builtin.h"
+#include "engine/builtin.h"
 
 ScadApi::ScadApi(QsciScintilla *qsci, QsciLexer *lexer) : QsciAbstractAPIs(lexer), qsci(qsci)
 {

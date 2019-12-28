@@ -36,13 +36,13 @@
 #include <unistd.h>
 #endif
 
-#include "FileModule.h"
-#include "UserModule.h"
-#include "ModuleInstantiation.h"
-#include "Assignment.h"
-#include "expression.h"
-#include "value.h"
-#include "function.h"
+#include "engine/FileModule.h"
+#include "engine/UserModule.h"
+#include "engine/ModuleInstantiation.h"
+#include "engine/Assignment.h"
+#include "engine/expression.h"
+#include "engine/value.h"
+#include "engine/function.h"
 #include "printutils.h"
 #include "memory.h"
 #include <sstream>

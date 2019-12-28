@@ -1,7 +1,7 @@
 #pragma once
 
-#include "value.h"
-#include "qtgettext.h"
+#include "engine/value.h"
+#include "../gui/qtgettext.h"
 #include "ui_ParameterEntryWidget.h"
 #include "parameterobject.h"
 

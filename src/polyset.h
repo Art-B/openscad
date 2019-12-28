@@ -4,7 +4,7 @@
 #include "linalg.h"
 #include "GeometryUtils.h"
 #include "Polygon2d.h"
-#include "GLView.h"
+#include "gui/GLView.h"
 #include <vector>
 #include <string>
 

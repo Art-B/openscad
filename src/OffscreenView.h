@@ -6,7 +6,7 @@
 #include <string>
 #include "system-gl.h"
 #include <iostream>
-#include "GLView.h"
+#include "gui/GLView.h"
 
 class OffscreenView : public GLView
 {

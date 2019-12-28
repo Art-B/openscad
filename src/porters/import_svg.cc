@@ -32,7 +32,7 @@
 #include "printutils.h"
 #include "libsvg/libsvg.h"
 #include "clipper-utils.h"
-#include "AST.h"
+#include "engine/AST.h"
 #include "boost-utils.h"
 
 namespace {

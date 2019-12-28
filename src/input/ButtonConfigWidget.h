@@ -1,6 +1,6 @@
 #pragma once
 
-#include "qtgettext.h"
+#include "gui/qtgettext.h"
 #include "ui_ButtonConfigWidget.h"
 #include "settings.h"
 

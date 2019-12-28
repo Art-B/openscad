@@ -25,14 +25,14 @@
  */
 
 #include "openscad.h"
-#include "comment.h"
+#include "engine/comment.h"
 #include "node.h"
-#include "FileModule.h"
-#include "ModuleInstantiation.h"
-#include "builtincontext.h"
-#include "value.h"
-#include "export.h"
-#include "builtin.h"
+#include "engine/FileModule.h"
+#include "engine/ModuleInstantiation.h"
+#include "engine/builtincontext.h"
+#include "engine/value.h"
+#include "porters/export.h"
+#include "engine/builtin.h"
 #include "printutils.h"
 #include "handle_dep.h"
 #include "feature.h"
@@ -43,7 +43,7 @@
 #include "nodedumper.h"
 #include "stackcheck.h"
 #include "CocoaUtils.h"
-#include "FontCache.h"
+#include "gui/FontCache.h"
 #include "OffscreenView.h"
 #include "GeometryEvaluator.h"
 #include "RenderStatistic.h"
@@ -269,7 +269,7 @@ Camera get_camera(const po::variables_map &vm)
 }
 
 #ifndef OPENSCAD_NOGUI
-#include "QSettingsCached.h"
+#include "gui/QSettingsCached.h"
 #define OPENSCAD_QTGUI 1
 #endif
 static bool checkAndExport(shared_ptr<const Geometry> root_geom, unsigned nd,
@@ -585,10 +585,10 @@ int cmdline(const char *deps_output_file, const std::string &filename, const std
 
 #ifdef OPENSCAD_QTGUI
 #include <QtPlugin>
-#include "MainWindow.h"
+#include "gui/MainWindow.h"
 #include "OpenSCADApp.h"
-#include "launchingscreen.h"
-#include "QSettingsCached.h"
+#include "gui/launchingscreen.h"
+#include "gui/QSettingsCached.h"
 #include "input/InputDriverManager.h"
 #ifdef ENABLE_HIDAPI
 #include "input/HidApiInputDriver.h"

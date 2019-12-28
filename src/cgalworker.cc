@@ -5,7 +5,7 @@
 #include "GeometryEvaluator.h"
 #include "progress.h"
 #include "printutils.h"
-#include "exceptions.h"
+#include "engine/exceptions.h"
 
 CGALWorker::CGALWorker()
 {

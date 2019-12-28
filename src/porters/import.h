@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include "AST.h"
+#include "engine/AST.h"
 
 class PolySet *import_stl(const std::string &filename, const Location &loc);
 PolySet *import_off(const std::string &filename, const Location &loc);

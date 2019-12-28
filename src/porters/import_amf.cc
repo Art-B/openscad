@@ -28,7 +28,7 @@
 
 #include "polyset.h"
 #include "printutils.h"
-#include "AST.h"
+#include "engine/AST.h"
 
 #ifdef ENABLE_CGAL
 #include "cgalutils.h"

@@ -25,7 +25,7 @@
  */
 #include <iostream>
 #include "boost-utils.h"
-#include "comment.h"
+#include "../engine/comment.h"
 #include "openscad.h"
 #include "GeometryCache.h"
 #include "ModuleCache.h"
@@ -37,10 +37,10 @@
 #include "printutils.h"
 #include "node.h"
 #include "csgnode.h"
-#include "builtin.h"
+#include "engine/builtin.h"
 #include "memory.h"
-#include "expression.h"
-#include "modcontext.h"
+#include "../engine/expression.h"
+#include "../engine/modcontext.h"
 #include "progress.h"
 #include "dxfdim.h"
 #include "settings.h"
@@ -122,7 +122,7 @@
 
 #include "FontCache.h"
 #include "PrintInitDialog.h"
-#include "input/InputDriverManager.h"
+#include "../input/InputDriverManager.h"
 #include <cstdio>
 #include <memory>
 #include <QtNetwork>

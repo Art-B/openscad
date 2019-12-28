@@ -25,10 +25,10 @@
  */
 
 #include "colornode.h"
-#include "module.h"
-#include "ModuleInstantiation.h"
-#include "evalcontext.h"
-#include "builtin.h"
+#include "engine/module.h"
+#include "engine/ModuleInstantiation.h"
+#include "engine/evalcontext.h"
+#include "engine/builtin.h"
 #include "printutils.h"
 #include <cctype>
 #include <sstream>

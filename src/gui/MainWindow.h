@@ -6,13 +6,13 @@
 #include "ui_MainWindow.h"
 #include "UIUtils.h"
 #include "openscad.h"
-#include "builtincontext.h"
-#include "module.h"
-#include "ModuleInstantiation.h"
+#include "engine/builtincontext.h"
+#include "engine/module.h"
+#include "engine/ModuleInstantiation.h"
 #include "Tree.h"
 #include "memory.h"
 #include "editor.h"
-#include "export.h"
+#include "porters/export.h"
 #include <vector>
 #include <QMutex>
 #include <QElapsedTimer>

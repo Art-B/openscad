@@ -1,6 +1,6 @@
 #include "parametertext.h"
-#include "modcontext.h"
-#include "comment.h"
+#include "engine/modcontext.h"
+#include "engine/comment.h"
 
 ParameterText::ParameterText(QWidget *parent, ParameterObject *parameterobject, DescLoD descriptionLoD)
 	: ParameterVirtualWidget(parent, parameterobject, descriptionLoD)

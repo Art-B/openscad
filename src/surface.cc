@@ -24,12 +24,12 @@
  *
  */
 
-#include "module.h"
-#include "ModuleInstantiation.h"
+#include "engine/module.h"
+#include "engine/ModuleInstantiation.h"
 #include "node.h"
 #include "polyset.h"
-#include "evalcontext.h"
-#include "builtin.h"
+#include "engine/evalcontext.h"
+#include "engine/builtin.h"
 #include "printutils.h"
 #include "fileutils.h"
 #include "handle_dep.h"

@@ -26,7 +26,7 @@
 #include "InputEventMapper.h"
 #include "InputDriverManager.h"
 #include "settings.h"
-#include "Preferences.h"
+#include "gui/Preferences.h"
 #include "AxisConfigWidget.h"
 #include "ButtonConfigWidget.h"
 #include <ciso646> // C alternative tokens

@@ -34,8 +34,8 @@
 #include "parametertext.h"
 #include "parametervector.h"
 
-#include "modcontext.h"
-#include "comment.h"
+#include "engine/modcontext.h"
+#include "engine/comment.h"
 
 #include <boost/filesystem.hpp>
 #include <boost/property_tree/ptree.hpp>

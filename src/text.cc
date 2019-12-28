@@ -25,13 +25,13 @@
  */
 
 #include "calc.h"
-#include "module.h"
-#include "evalcontext.h"
+#include "engine/module.h"
+#include "engine/evalcontext.h"
 #include "printutils.h"
-#include "builtin.h"
+#include "engine/builtin.h"
 
 #include "textnode.h"
-#include "FreetypeRenderer.h"
+#include "gui/FreetypeRenderer.h"
 #include "Polygon2d.h"
 
 #include <boost/assign/std/vector.hpp>

@@ -12,6 +12,8 @@
 #include "version.h"
 #include "feature.h"
 
+#include "feature.h"
+
 #define STRINGIFY(x) #x
 #define TOSTRING(x) STRINGIFY(x)
 

@@ -1,11 +1,11 @@
 %{
     #include <sstream>
     #include <string.h>
-    #include "Assignment.h"
-    #include "expression.h"
+    #include "engine/Assignment.h"
+    #include "engine/expression.h"
     #include "printutils.h"
-    #include "value.h" 
-    #include "comment.h"
+    #include "engine/value.h" 
+    #include "engine/comment.h"
     #ifdef _MSC_VER
     #define strdup _strdup
     #endif

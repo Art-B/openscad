@@ -24,21 +24,21 @@
  *
  */
 
-#include "module.h"
+#include "engine/module.h"
 #include "node.h"
 #include "polyset.h"
-#include "evalcontext.h"
+#include "engine/evalcontext.h"
 #include "Polygon2d.h"
-#include "builtin.h"
+#include "engine/builtin.h"
 #include "printutils.h"
-#include "context.h"
+#include "engine/context.h"
 #include "calc.h"
 #include "degree_trig.h"
 #include <sstream>
 #include <assert.h>
 #include <cmath>
 #include <boost/assign/std/vector.hpp>
-#include "ModuleInstantiation.h"
+#include "engine/ModuleInstantiation.h"
 #include "boost-utils.h"
 using namespace boost::assign; // bring 'operator+=()' into scope
 
