@@ -5,5 +5,5 @@ OPENSCAD_LIBRARIES_DIR = $$(OPENSCAD_LIBRARIES)
 }
 
 LIBS += -framework Sparkle
-HEADERS += src/SparkleAutoUpdater.h
+HEADERS += src/osx/SparkleAutoUpdater.h
 DEFINES += OPENSCAD_UPDATER

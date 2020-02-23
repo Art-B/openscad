@@ -42,7 +42,7 @@
 #include "LibraryInfo.h"
 #include "nodedumper.h"
 #include "stackcheck.h"
-#include "CocoaUtils.h"
+#include "osx/CocoaUtils.h"
 #include "gui/FontCache.h"
 #include "OffscreenView.h"
 #include "GeometryEvaluator.h"

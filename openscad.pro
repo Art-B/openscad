@@ -61,7 +61,7 @@ deploy {
   DEFINES += OPENSCAD_DEPLOY
   macx: {
     CONFIG += sparkle
-    OBJECTIVE_SOURCES += src/SparkleAutoUpdater.mm
+    OBJECTIVE_SOURCES += src/osx/SparkleAutoUpdater.mm
     QMAKE_RPATHDIR = @executable_path/../Frameworks
   }
 }
@@ -629,15 +629,15 @@ linux: {
 
 unix:!macx {
   SOURCES += src/imageutils-lodepng.cc
-  SOURCES += src/OffscreenContextGLX.cc
+  SOURCES += src/posix/OffscreenContextGLX.cc
 }
 macx {
-  SOURCES += src/imageutils-macosx.cc
-  OBJECTIVE_SOURCES += src/OffscreenContextCGL.mm
+  SOURCES += src/osx/imageutils-macosx.cc
+  OBJECTIVE_SOURCES += src/osx/OffscreenContextCGL.mm
 }
 win* {
   SOURCES += src/imageutils-lodepng.cc
-  SOURCES += src/OffscreenContextWGL.cc
+  SOURCES += src/win/OffscreenContextWGL.cc
 }
 
 opencsg {
@@ -669,19 +669,19 @@ SOURCES += src/cgalutils.cc \
 }
 
 macx {
-  HEADERS += src/AppleEvents.h \
-             src/EventFilter.h \
-             src/CocoaUtils.h
-  SOURCES += src/AppleEvents.cc
-  OBJECTIVE_SOURCES += src/CocoaUtils.mm \
-                       src/PlatformUtils-mac.mm
+  HEADERS += src/osx/AppleEvents.h \
+             src/osx/EventFilter.h \
+             src/osx/CocoaUtils.h
+  SOURCES += src/osx/AppleEvents.cc
+  OBJECTIVE_SOURCES += src/osx/CocoaUtils.mm \
+                       src/osx/PlatformUtils-mac.mm
 }
 unix:!macx {
-  SOURCES += src/PlatformUtils-posix.cc
+  SOURCES += src/posix/PlatformUtils-posix.cc
 }
 win* {
-  HEADERS += src/findversion.h
-  SOURCES += src/PlatformUtils-win.cc
+  HEADERS += src/win/findversion.h
+  SOURCES += src/win/PlatformUtils-win.cc
 }
 
 isEmpty(PREFIX):PREFIX = /usr/local

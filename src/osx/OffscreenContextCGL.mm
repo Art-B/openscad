@@ -1,6 +1,6 @@
-#include "OffscreenContext.h"
-#include "imageutils.h"
-#include "fbo.h"
+#include "../OffscreenContext.h"
+#include "../imageutils.h"
+#include "../fbo.h"
 #include <iostream>
 #include <sstream>
 

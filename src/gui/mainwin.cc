@@ -60,7 +60,7 @@
 #include "QGLView.h"
 #include "mouseselector.h"
 #ifdef Q_OS_MAC
-#include "CocoaUtils.h"
+#include "osx/CocoaUtils.h"
 #endif
 #include "PlatformUtils.h"
 #ifdef OPENSCAD_UPDATER

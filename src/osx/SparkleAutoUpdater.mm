@@ -9,7 +9,7 @@
  */
 
 #include "SparkleAutoUpdater.h"
-#include "PlatformUtils.h"
+#include "../PlatformUtils.h"
 
 #include <Cocoa/Cocoa.h>
 #include <Sparkle/Sparkle.h>
