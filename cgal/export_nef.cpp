@@ -8,7 +8,7 @@
 
 #include "cgalutils.h"
 #include "export.h"
-#include "polyset.h"
+#include "../math/polyset.h"
 #include "CGAL_Nef_polyhedron.h"
 
 #pragma push_macro("NDEBUG")

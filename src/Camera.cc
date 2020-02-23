@@ -1,7 +1,7 @@
 #include "Camera.h"
 #include "rendersettings.h"
 #include "printutils.h"
-#include "degree_trig.h"
+#include "engine/math/degree_trig.h"
 
 static const double DEFAULT_DISTANCE = 140.0;
 static const double DEFAULT_FOV = 22.5;

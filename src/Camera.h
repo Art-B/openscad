@@ -16,7 +16,7 @@ projection, Perspective and Orthogonal.
 
 */
 
-#include "linalg.h"
+#include "engine/math/linalg.h"
 #include "engine/modcontext.h"
 #include <vector>
 #include <Eigen/Geometry>

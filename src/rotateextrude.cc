@@ -31,7 +31,7 @@
 #include "printutils.h"
 #include "fileutils.h"
 #include "engine/builtin.h"
-#include "polyset.h"
+#include "engine/math/polyset.h"
 #include "handle_dep.h"
 #include "boost-utils.h"
 #include <sstream>

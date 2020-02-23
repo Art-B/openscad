@@ -10,8 +10,8 @@
 #include "cgaladvnode.h"
 #include "printutils.h"
 #include "GeometryEvaluator.h"
-#include "polyset.h"
-#include "polyset-utils.h"
+#include "engine/math/polyset.h"
+#include "engine/math/polyset-utils.h"
 
 #include <string>
 #include <map>

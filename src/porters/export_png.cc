@@ -3,7 +3,7 @@
 #include "OffscreenView.h"
 #include "CsgInfo.h"
 #include <stdio.h>
-#include "polyset.h"
+#include "../engine/math/polyset.h"
 #include "rendersettings.h"
 
 #ifdef ENABLE_CGAL

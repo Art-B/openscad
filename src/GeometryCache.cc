@@ -1,8 +1,7 @@
 #include "GeometryCache.h"
 #include "printutils.h"
-#include "Geometry.h"
+#include "engine/math/Geometry.h"
 #include "boost-utils.h"
-
 #ifdef DEBUG
   #ifndef ENABLE_CGAL
   #define ENABLE_CGAL

@@ -6,9 +6,9 @@
 #include <iostream>
 #include <locale.h>
 
-#include "GeometryUtils.h"
+#include "math/GeometryUtils.h"
 #include "Reindexer.h"
-#include "linalg.h"
+#include "math/linalg.h"
 #include "grid.h"
 #include "printutils.h"
 

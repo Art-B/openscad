@@ -1,7 +1,7 @@
 #pragma once
 
 #include "node.h"
-#include "linalg.h"
+#include "engine/math/linalg.h"
 
 class TransformNode : public AbstractNode
 {

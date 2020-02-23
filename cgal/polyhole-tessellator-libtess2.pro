@@ -81,8 +81,8 @@ CONFIG += gettext
 
 include(../common.pri)
 
-HEADERS += ../src/GeometryUtils.cc \
-           ../src/linalg.h \
+HEADERS += ../src/math/GeometryUtils.cc \
+           ../src/math/linalg.h \
            ../src/printutils.h \
            ../src/grid.h \
            ../src/libtess2/Include/tesselator.h \
@@ -95,7 +95,7 @@ HEADERS += ../src/GeometryUtils.cc \
            ../src/libtess2/Source/tess.h
 
 SOURCES += polyhole-tessellator-libtess2.cpp \
-           ../src/GeometryUtils.cc \
+           ../src/math/GeometryUtils.cc \
            ../src/printutils.cc \
            ../src/libtess2/Source/bucketalloc.c \
            ../src/libtess2/Source/dict.c \

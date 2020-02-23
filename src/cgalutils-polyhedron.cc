@@ -1,9 +1,9 @@
 #ifdef ENABLE_CGAL
 
 #include "cgalutils.h"
-#include "polyset.h"
+#include "engine/math/polyset.h"
 #include "printutils.h"
-#include "polyset-utils.h"
+#include "engine/math/polyset-utils.h"
 #include "grid.h"
 
 #include "cgal.h"

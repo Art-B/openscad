@@ -4,11 +4,11 @@
 #ifdef ENABLE_CGAL
 
 #include "cgalutils.h"
-#include "polyset.h"
+#include "engine/math/polyset.h"
 #include "printutils.h"
 #include "progress.h"
-#include "Polygon2d.h"
-#include "polyset-utils.h"
+#include "engine/math/Polygon2d.h"
+#include "engine/math/polyset-utils.h"
 #include "grid.h"
 #include "node.h"
 
@@ -28,7 +28,7 @@
 #include "memory.h"
 #include "svg.h"
 #include "Reindexer.h"
-#include "GeometryUtils.h"
+#include "engine/math/GeometryUtils.h"
 
 #include <map>
 #include <queue>

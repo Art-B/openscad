@@ -1,7 +1,7 @@
 #pragma once
 
 #include <cstring>
-#include "linalg.h"
+#include "engine/math/linalg.h"
 
 #define FLAG(var, flag, on) on ? (var |= flag) : (var &= ~flag)
 

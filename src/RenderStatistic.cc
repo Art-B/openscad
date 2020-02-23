@@ -26,8 +26,8 @@
 #include "printutils.h"
 #include "GeometryCache.h"
 #include "CGALCache.h"
-#include "polyset.h"
-#include "Polygon2d.h"
+#include "engine/math/polyset.h"
+#include "engine/math/Polygon2d.h"
 #include "boost-utils.h"
 #ifdef ENABLE_CGAL
 #include "CGAL_Nef_polyhedron.h"

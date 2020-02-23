@@ -25,8 +25,8 @@
  */
 
 #include "export.h"
-#include "polyset.h"
-#include "polyset-utils.h"
+#include "../engine/math/polyset.h"
+#include "../engine/math/polyset-utils.h"
 #include "printutils.h"
 
 #ifdef ENABLE_LIB3MF

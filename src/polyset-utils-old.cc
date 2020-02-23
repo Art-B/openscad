@@ -1,6 +1,6 @@
-#include "polyset-utils.h"
-#include "polyset.h"
-#include "Polygon2d.h"
+#include "engine/math/polyset-utils.h"
+#include "engine/math/polyset.h"
+#include "engine/math/Polygon2d.h"
 #include "printutils.h"
 #include "cgal.h"
 

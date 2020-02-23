@@ -33,7 +33,7 @@
 #include "fileutils.h"
 #include "engine/evalcontext.h"
 #include "handle_dep.h"
-#include "degree_trig.h"
+#include "engine/math/degree_trig.h"
 
 #include <cmath>
 #include <sstream>

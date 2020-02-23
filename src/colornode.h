@@ -1,7 +1,7 @@
 #pragma once
 
 #include "node.h"
-#include "linalg.h"
+#include "engine/math/linalg.h"
 
 class ColorNode : public AbstractNode
 {

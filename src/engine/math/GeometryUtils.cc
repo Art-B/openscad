@@ -1,7 +1,7 @@
 #include "GeometryUtils.h"
-#include "ext/libtess2/Include/tesselator.h"
-#include "printutils.h"
-#include "Reindexer.h"
+#include "../../ext/libtess2/Include/tesselator.h"
+#include "../../printutils.h"
+#include "../../Reindexer.h"
 #include <boost/lexical_cast.hpp>
 #include <unordered_map>
 #include <cmath>

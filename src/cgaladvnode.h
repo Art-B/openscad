@@ -2,7 +2,7 @@
 
 #include "node.h"
 #include "engine/value.h"
-#include "linalg.h"
+#include "engine/math/linalg.h"
 
 enum class CgaladvType {
 	MINKOWSKI,

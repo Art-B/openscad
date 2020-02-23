@@ -26,8 +26,8 @@
 
 #include "importnode.h"
 
-#include "polyset.h"
-#include "Geometry.h"
+#include "engine/math/polyset.h"
+#include "engine/math/Geometry.h"
 #include "printutils.h"
 #include "version_helper.h"
 #include "engine/AST.h"

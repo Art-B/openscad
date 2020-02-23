@@ -32,7 +32,7 @@
 
 #include "textnode.h"
 #include "gui/FreetypeRenderer.h"
-#include "Polygon2d.h"
+#include "engine/math/Polygon2d.h"
 
 #include <boost/assign/std/vector.hpp>
 using namespace boost::assign; // bring 'operator+=()' into scope

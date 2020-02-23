@@ -5,7 +5,7 @@
 #include "rendersettings.h"
 #include "printutils.h"
 #include "renderer.h"
-#include "degree_trig.h"
+#include "../engine/math/degree_trig.h"
 #include <cmath>
 #include "boost-utils.h"
 #ifdef _WIN32

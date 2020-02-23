@@ -1,7 +1,7 @@
 #pragma once
 
 #include <map>
-#include "linalg.h"
+#include "engine/math/linalg.h"
 
 class RenderSettings
 {

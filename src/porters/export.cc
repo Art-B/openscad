@@ -25,9 +25,9 @@
  */
 
 #include "export.h"
-#include "polyset.h"
+#include "../engine/math/polyset.h"
 #include "printutils.h"
-#include "Geometry.h"
+#include "../engine/math/Geometry.h"
 
 #include <fstream>
 

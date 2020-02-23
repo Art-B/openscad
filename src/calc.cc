@@ -30,7 +30,7 @@
 #include <algorithm>
 #include "calc.h"
 #include "grid.h"
-#include "degree_trig.h"
+#include "engine/math/degree_trig.h"
 
 /*!
 	Returns the number of subdivision of a whole circle, given radius and

@@ -26,7 +26,7 @@
 
 #include "export.h"
 #include "printutils.h"
-#include "Geometry.h"
+#include "../engine/math/Geometry.h"
 
 #ifdef ENABLE_CGAL
 #include "CGAL_Nef_polyhedron.h"

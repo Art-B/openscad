@@ -44,9 +44,9 @@
 
 #include "engine/value.h"
 #include "boost-utils.h"
-#include "Polygon2d.h"
+#include "engine/math/Polygon2d.h"
 #include "printutils.h"
-#include "degree_trig.h"
+#include "engine/math/degree_trig.h"
 
 
 namespace fs = boost::filesystem;

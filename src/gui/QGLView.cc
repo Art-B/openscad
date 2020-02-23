@@ -28,7 +28,7 @@
 #include "QGLView.h"
 #include "Preferences.h"
 #include "renderer.h"
-#include "degree_trig.h"
+#include "../engine/math/degree_trig.h"
 
 #include <QApplication>
 #include <QWheelEvent>

@@ -1,12 +1,12 @@
 #include "renderer.h"
 #include "rendersettings.h"
-#include "Geometry.h"
-#include "polyset.h"
-#include "Polygon2d.h"
+#include "engine/math/Geometry.h"
+#include "engine/math/polyset.h"
+#include "engine/math/Polygon2d.h"
 #include "colormap.h"
 #include "printutils.h"
 
-#include "polyset-utils.h"
+#include "engine/math/polyset-utils.h"
 #include "grid.h"
 #include <Eigen/LU>
 

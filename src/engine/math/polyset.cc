@@ -27,8 +27,8 @@
 #include "polyset.h"
 #include "polyset-utils.h"
 #include "linalg.h"
-#include "printutils.h"
-#include "grid.h"
+#include "../../printutils.h"
+#include "../../grid.h"
 #include <Eigen/LU>
 
 /*! /class PolySet

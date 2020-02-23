@@ -403,10 +403,6 @@ elseif(WIN32)
   endif()
 endif()
 
-include_directories("src/ext/libtess2/Include")
-
-# NOTE: To keep HEADLESS builds working, do NOT add Qt-dependent sources here,
-#       see GUI_SOURCES list below for that.
 set(CORE_SOURCES
   src/engine/annotation.cc
   src/boost-utils.cc
@@ -422,7 +418,7 @@ set(CORE_SOURCES
   src/comment.cpp
   src/csgnode.cc
   src/csgops.cc
-  src/degree_trig.cc
+  src/engine/math/degree_trig.cc
   src/dxfdata.cc
   src/dxfdim.cc
   src/engine/evalcontext.cc
@@ -447,7 +443,7 @@ set(CORE_SOURCES
   src/porters/import_stl.cc
   src/porters/import_off.cc
   src/porters/import_svg.cc
-  src/linalg.cc
+  src/engine/math/linalg.cc
   src/linearextrude.cc
   src/engine/localscope.cc
   src/engine/modcontext.cc
@@ -456,8 +452,8 @@ set(CORE_SOURCES
   src/nodedumper.cc
   src/offset.cc
   src/parsersettings.cc
-  src/polyset.cc
-  src/polyset-utils.cc
+  src/engine/math/polyset.cc
+  src/engine/math/polyset-utils.cc
   src/primitives.cc
   src/printutils.cc
   src/progress.cc
@@ -480,16 +476,16 @@ set(CORE_SOURCES
   src/engine/FileModule.cc
   src/gui/FontCache.cc
   src/gui/FreetypeRenderer.cc
-  src/Geometry.cc
+  src/engine/math/Geometry.cc
   src/GeometryCache.cc
-  src/GeometryUtils.cc
+  src/engine/math/GeometryUtils.cc
   src/engine/GroupModule.cc
   src/LibraryInfo.cc
   src/engine/ModuleInstantiation.cc
   src/ModuleCache.cc
   src/NodeVisitor.cc
   src/PlatformUtils.cc
-  src/Polygon2d.cc
+  src/engine/math/Polygon2d.cc
   src/RenderStatistic.cc
   src/StatCache.cc
   src/engine/UserModule.cc
@@ -546,7 +542,7 @@ set(CGAL_SOURCES
 if(NULLGL)
   message(STATUS "NULLGL is set. Overriding OpenGL(TM) settings")
   set(OFFSCREEN_SOURCES
-    src/export_png.cc
+    src/porters/export_png.cc
     src/imageutils.cc
     src/renderer.cc
     src/render.cc

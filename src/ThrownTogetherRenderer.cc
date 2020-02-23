@@ -25,7 +25,7 @@
  */
 
 #include "ThrownTogetherRenderer.h"
-#include "polyset.h"
+#include "engine/math/polyset.h"
 #include "printutils.h"
 
 #include "system-gl.h"

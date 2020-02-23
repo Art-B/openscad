@@ -26,7 +26,7 @@
 
 #include "system-gl.h"
 #include "OpenCSGRenderer.h"
-#include "polyset.h"
+#include "engine/math/polyset.h"
 #include "csgnode.h"
 
 #define OPENGL_TEST(place) \

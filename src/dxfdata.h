@@ -1,7 +1,7 @@
 #pragma once
 
 #include <vector>
-#include "linalg.h"
+#include "engine/math/linalg.h"
 
 class DxfData
 {

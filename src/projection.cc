@@ -30,7 +30,7 @@
 #include "engine/evalcontext.h"
 #include "printutils.h"
 #include "engine/builtin.h"
-#include "polyset.h"
+#include "engine/math/polyset.h"
 
 #include <assert.h>
 #include <boost/assign/std/vector.hpp>

@@ -33,7 +33,7 @@
 #include "exceptions.h"
 #include "memory.h"
 #include "UserModule.h"
-#include "degree_trig.h"
+#include "math/degree_trig.h"
 
 #include <cmath>
 #include <sstream>
@@ -46,7 +46,7 @@
 /*Unicode support for string lengths and array accesses*/
 #include <glib.h>
 // hash double
-#include "linalg.h"
+#include "math/linalg.h"
 
 #if defined __WIN32__ || defined _MSC_VER
 #include <process.h>

@@ -333,12 +333,12 @@ HEADERS += src/version_check.h \
            src/version.h \
            src/openscad.h \
            src/handle_dep.h \
-           src/Geometry.h \
-           src/Polygon2d.h \
+           src/engine/math/Geometry.h \
+           src/engine/math/Polygon2d.h \
            src/clipper-utils.h \
-           src/GeometryUtils.h \
-           src/polyset-utils.h \
-           src/polyset.h \
+           src/engine/math/GeometryUtils.h \
+           src/engine/math/polyset-utils.h \
+           src/engine/math/polyset.h \
            src/printutils.h \
            src/fileutils.h \
            src/engine/value.h \
@@ -356,7 +356,7 @@ HEADERS += src/version_check.h \
            src/gui/FreetypeRenderer.h \
            src/gui/FontCache.h \
            src/memory.h \
-           src/linalg.h \
+           src/engine/math/linalg.h \
            src/Camera.h \
            src/system-gl.h \
            src/boost-utils.h \
@@ -426,11 +426,11 @@ SOURCES += \
 
 SOURCES += \
            src/gui/ProgressWidget.cc \
-           src/linalg.cc \
+           src/engine/math/linalg.cc \
            src/Camera.cc \
            src/handle_dep.cc \
            src/engine/value.cc \
-           src/degree_trig.cc \
+           src/engine/math/degree_trig.cc \
            src/engine/func.cc \
            src/engine/localscope.cc \
            src/feature.cc \
@@ -442,12 +442,12 @@ SOURCES += \
            src/csgnode.cc \
            src/CSGTreeNormalizer.cc \
            src/CSGTreeEvaluator.cc \
-           src/Geometry.cc \
-           src/Polygon2d.cc \
+           src/engine/math/Geometry.cc \
+           src/engine/math/Polygon2d.cc \
            src/clipper-utils.cc \
-           src/polyset-utils.cc \
-           src/GeometryUtils.cc \
-           src/polyset.cc \
+           src/engine/math/polyset-utils.cc \
+           src/engine/math/GeometryUtils.cc \
+           src/engine/math/polyset.cc \
            src/csgops.cc \
            src/transform.cc \
            src/color.cc \

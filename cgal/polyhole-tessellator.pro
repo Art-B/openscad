@@ -82,7 +82,7 @@ include(../common.pri)
 
 HEADERS += ../src/cgal.h \
            ../src/cgalutils.h \
-           ../src/linalg.h \
+           ../src/math/linalg.h \
            ../src/printutils.h
 
 SOURCES += polyhole-tessellator.cpp \

@@ -5,7 +5,7 @@
 #include <list>
 
 #include "linalg.h"
-#include "memory.h"
+#include "../../memory.h"
 
 class GeometryVisitor;
 

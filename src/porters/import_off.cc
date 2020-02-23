@@ -1,5 +1,5 @@
 #include "import.h"
-#include "polyset.h"
+#include "../engine/math/polyset.h"
 #include "printutils.h"
 #include "engine/AST.h"
 #ifdef ENABLE_CGAL

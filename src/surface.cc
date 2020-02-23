@@ -27,7 +27,7 @@
 #include "engine/module.h"
 #include "engine/ModuleInstantiation.h"
 #include "node.h"
-#include "polyset.h"
+#include "engine/math/polyset.h"
 #include "engine/evalcontext.h"
 #include "engine/builtin.h"
 #include "printutils.h"

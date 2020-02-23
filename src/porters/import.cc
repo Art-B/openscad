@@ -29,11 +29,11 @@
 
 #include "engine/module.h"
 #include "engine/ModuleInstantiation.h"
-#include "polyset.h"
+#include "../engine/math/polyset.h"
 #ifdef ENABLE_CGAL
 #include "CGAL_Nef_polyhedron.h"
 #endif
-#include "Polygon2d.h"
+#include "../engine/math/Polygon2d.h"
 #include "engine/evalcontext.h"
 #include "engine/builtin.h"
 #include "dxfdata.h"

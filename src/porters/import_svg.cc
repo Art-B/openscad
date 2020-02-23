@@ -28,7 +28,7 @@
 #include <Eigen/Geometry>
 
 #include "import.h"
-#include "Polygon2d.h"
+#include "../engine/math/Polygon2d.h"
 #include "printutils.h"
 #include "libsvg/libsvg.h"
 #include "clipper-utils.h"

@@ -3,7 +3,7 @@
 #include "NodeVisitor.h"
 #include "enums.h"
 #include "memory.h"
-#include "Geometry.h"
+#include "engine/math/Geometry.h"
 
 #include <utility>
 #include <list>

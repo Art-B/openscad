@@ -45,7 +45,7 @@
 #include "group.h"
 
 #include "transformation.h"
-#include "degree_trig.h"
+#include "../engine/math/degree_trig.h"
 
 namespace libsvg {
 

@@ -35,7 +35,7 @@
 #include <boost/algorithm/string.hpp>
 
 #include "path.h"
-#include "degree_trig.h"
+#include "../engine/math/degree_trig.h"
 
 namespace libsvg {
 

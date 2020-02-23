@@ -33,7 +33,7 @@
 #include "fileutils.h"
 #include "engine/builtin.h"
 #include "calc.h"
-#include "polyset.h"
+#include "engine/math/polyset.h"
 
 #include <sstream>
 #include <boost/assign/std/vector.hpp>

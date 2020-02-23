@@ -2,7 +2,7 @@
 #include "cgal.h"
 #include "cgalutils.h"
 #include "printutils.h"
-#include "polyset.h"
+#include "engine/math/polyset.h"
 #include "svg.h"
 
 CGAL_Nef_polyhedron::CGAL_Nef_polyhedron(CGAL_Nef_polyhedron3 *p)

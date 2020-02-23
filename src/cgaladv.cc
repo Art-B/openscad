@@ -29,7 +29,7 @@
 #include "engine/ModuleInstantiation.h"
 #include "engine/evalcontext.h"
 #include "engine/builtin.h"
-#include "polyset.h"
+#include "engine/math/polyset.h"
 #include <sstream>
 #include <assert.h>
 #include <boost/assign/std/vector.hpp>

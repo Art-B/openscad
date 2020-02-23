@@ -3,7 +3,7 @@
 #include <map>
 #include <string>
 #include <list>
-#include "linalg.h"
+#include "engine/math/linalg.h"
 
 #include "memory.h"
 #include <boost/filesystem.hpp>

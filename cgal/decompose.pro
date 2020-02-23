@@ -91,13 +91,13 @@ include(../common.pri)
 
 HEADERS += ../src/cgal.h \
            ../src/cgalutils.h \
-           ../src/linalg.h \
+           ../src/math/linalg.h \
            ../src/grid.h \
            ../src/hash.h \
-           ../src/polyset.h \
-           ../src/polyset-utils.h \
+           ../src/math/polyset.h \
+           ../src/math/polyset-utils.h \
            ../src/printutils.h \
-           ../src/GeometryUtils.h \
+           ../src/math/GeometryUtils.h \
            ../src/libtess2/Include/tesselator.h \
            ../src/libtess2/Source/bucketalloc.h \
            ../src/libtess2/Source/dict.h \
@@ -115,9 +115,9 @@ SOURCES += decompose.cpp \
            ../src/cgalutils-applyops.cc \
            ../src/cgalutils-tess.cc \
            ../src/cgalutils-polyhedron.cc \
-           ../src/polyset.cc \
+           ../src/math/polyset.cc \
            ../src/polyset-gl.cc \
-           ../src/GeometryUtils.cc \
+           ../src/math/GeometryUtils.cc \
            ../src/svg.cc \
            ../src/hash.cc \
            ../src/node.cc \
@@ -128,7 +128,7 @@ SOURCES += decompose.cpp \
            ../src/export_dxf.cc \
            ../src/export_svg.cc \
            ../src/export_nef.cc \
-           ../src/polyset-utils.cc \
+           ../src/math/polyset-utils.cc \
            ../src/progress.cc \
            ../src/printutils.cc \
            ../src/libtess2/Source/bucketalloc.c \

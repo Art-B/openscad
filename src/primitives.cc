@@ -26,14 +26,14 @@
 
 #include "engine/module.h"
 #include "node.h"
-#include "polyset.h"
+#include "engine/math/polyset.h"
 #include "engine/evalcontext.h"
-#include "Polygon2d.h"
+#include "engine/math/Polygon2d.h"
 #include "engine/builtin.h"
 #include "printutils.h"
 #include "engine/context.h"
 #include "calc.h"
-#include "degree_trig.h"
+#include "engine/math/degree_trig.h"
 #include <sstream>
 #include <assert.h>
 #include <cmath>
