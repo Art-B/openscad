@@ -24,14 +24,14 @@
  *
  */
 
-#include "importnode.h"
+#include "../engine/importnode.h"
 
 #include "../engine/math/polyset.h"
 #include "printutils.h"
 #include "engine/AST.h"
 
 #ifdef ENABLE_CGAL
-#include "cgalutils.h"
+#include "../engine/cgalutils.h"
 #endif
 
 #include <sys/types.h>

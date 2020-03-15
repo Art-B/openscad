@@ -32,17 +32,17 @@
 #include "MainWindow.h"
 #include "OpenSCADApp.h"
 #include "parsersettings.h"
-#include "rendersettings.h"
+#include "../renderer/rendersettings.h"
 #include "Preferences.h"
 #include "printutils.h"
-#include "node.h"
-#include "csgnode.h"
-#include "engine/builtin.h"
+#include "../engine/node.h"
+#include "../engine/csgnode.h"
+#include "../engine/builtin.h"
 #include "memory.h"
 #include "../engine/expression.h"
 #include "../engine/modcontext.h"
 #include "progress.h"
-#include "dxfdim.h"
+#include "../porters/dxfdim.h"
 #include "settings.h"
 #include "AboutDialog.h"
 #include "FontListDialog.h"
@@ -50,13 +50,13 @@
 #include "RenderStatistic.h"
 #include "scintillaeditor.h"
 #ifdef ENABLE_OPENCSG
-#include "CSGTreeEvaluator.h"
-#include "OpenCSGRenderer.h"
+#include "../engine/CSGTreeEvaluator.h"
+#include "../renderer/OpenCSGRenderer.h"
 #include <opencsg.h>
 #endif
 #include "ProgressWidget.h"
-#include "ThrownTogetherRenderer.h"
-#include "CSGTreeNormalizer.h"
+#include "../renderer/ThrownTogetherRenderer.h"
+#include "../engine/CSGTreeNormalizer.h"
 #include "QGLView.h"
 #include "mouseselector.h"
 #ifdef Q_OS_MAC
@@ -111,12 +111,12 @@
 #ifdef ENABLE_CGAL
 
 #include "CGALCache.h"
-#include "GeometryEvaluator.h"
-#include "CGALRenderer.h"
+#include "../engine/GeometryEvaluator.h"
+#include "../renderer/CGALRenderer.h"
 #include "CGAL_Nef_polyhedron.h"
-#include "cgal.h"
+#include "../engine/cgal.h"
 #include "cgalworker.h"
-#include "cgalutils.h"
+#include "../engine/cgalutils.h"
 
 #endif // ENABLE_CGAL
 

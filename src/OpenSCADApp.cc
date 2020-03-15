@@ -1,7 +1,7 @@
 #include "OpenSCADApp.h"
 #include "gui/MainWindow.h"
 #ifdef Q_OS_MAC
-#include "EventFilter.h"
+#include "gui/EventFilter.h"
 #endif
 
 #include <QProgressDialog>

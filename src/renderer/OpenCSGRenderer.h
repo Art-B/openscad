@@ -5,7 +5,7 @@
 #ifdef ENABLE_OPENCSG
 #include <opencsg.h>
 #endif
-#include "csgnode.h"
+#include "engine/csgnode.h"
 
 class OpenCSGRenderer : public Renderer
 {

@@ -2,7 +2,7 @@
 #include <QThread>
 
 #include "Tree.h"
-#include "GeometryEvaluator.h"
+#include "engine/GeometryEvaluator.h"
 #include "progress.h"
 #include "printutils.h"
 #include "engine/exceptions.h"

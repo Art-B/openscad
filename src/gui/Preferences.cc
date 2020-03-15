@@ -39,7 +39,7 @@
 #include "CGALCache.h"
 #endif
 #include "colormap.h"
-#include "rendersettings.h"
+#include "../renderer/rendersettings.h"
 #include "QSettingsCached.h"
 #include "input/InputDriverManager.h"
 #include "SettingsWriter.h"

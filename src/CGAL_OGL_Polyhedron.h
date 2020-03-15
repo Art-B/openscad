@@ -29,7 +29,7 @@
 #ifndef NULLGL
 
 #include "colormap.h"
-#include "rendersettings.h"
+#include "renderer/rendersettings.h"
 #include "ext/CGAL/OGL_helper.h"
 #include "printutils.h"
 

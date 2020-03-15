@@ -1,7 +1,7 @@
 #pragma once
 
 #include "gui/GLView.h"
-#include "renderer.h"
+#include "renderer/renderer.h"
 
 #include <QOpenGLFramebufferObject>
 

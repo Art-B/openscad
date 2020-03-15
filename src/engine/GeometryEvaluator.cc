@@ -25,7 +25,7 @@
 #include "printutils.h"
 #include "svg.h"
 #include "calc.h"
-#include "dxfdata.h"
+#include "../porters/dxfdata.h"
 #include "engine/math/degree_trig.h"
 #include <ciso646> // C alternative tokens (xor)
 #include <algorithm>

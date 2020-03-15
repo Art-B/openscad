@@ -24,7 +24,7 @@
  *
  */
 
-#include "importnode.h"
+#include "../engine/importnode.h"
 
 #include "engine/math/polyset.h"
 #include "engine/math/Geometry.h"

@@ -2,9 +2,9 @@
 
 #include "stdio.h"
 #include "colormap.h"
-#include "rendersettings.h"
+#include "../renderer/rendersettings.h"
 #include "printutils.h"
-#include "renderer.h"
+#include "../renderer/renderer.h"
 #include "../engine/math/degree_trig.h"
 #include <cmath>
 #include "boost-utils.h"

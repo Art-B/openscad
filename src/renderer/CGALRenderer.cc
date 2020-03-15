@@ -30,7 +30,7 @@
 #endif
 
 // dxfdata.h must come first for Eigen SIMD alignment issues
-#include "dxfdata.h"
+#include "../porters/dxfdata.h"
 #include "engine/math/polyset.h"
 #include "engine/math/polyset-utils.h"
 #include "printutils.h"
@@ -38,7 +38,7 @@
 #include "CGALRenderer.h"
 #include "CGAL_OGL_Polyhedron.h"
 #include "CGAL_Nef_polyhedron.h"
-#include "cgal.h"
+#include "engine/cgal.h"
 
 //#include "Preferences.h"
 

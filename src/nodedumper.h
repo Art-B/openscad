@@ -3,8 +3,8 @@
 #include <string>
 #include <unordered_map>
 #include <list>
-#include "NodeVisitor.h"
-#include "node.h"
+#include "engine/NodeVisitor.h"
+#include "engine/node.h"
 #include "nodecache.h"
 
 // GroupNodeChecker does a quick first pass to count children of group nodes

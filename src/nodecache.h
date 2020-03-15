@@ -3,7 +3,7 @@
 #include <string>
 #include <unordered_map>
 #include <assert.h>
-#include "node.h"
+#include "engine/node.h"
 #include "printutils.h"
 
 /*!

@@ -6,7 +6,7 @@
 #include "../../Reindexer.h"
 #include "../../grid.h"
 #ifdef ENABLE_CGAL
-#include "../../cgalutils.h"
+#include "../cgalutils.h"
 #endif
 
 namespace PolysetUtils {

@@ -275,11 +275,11 @@ HEADERS += src/version_check.h \
            src/version_helper.h \
            src/gui/ProgressWidget.h \
            src/parsersettings.h \
-           src/renderer.h \
+           src/renderer/renderer.h \
            src/settings.h \
-           src/rendersettings.h \
+           src/renderer/rendersettings.h \
            src/colormap.h \
-           src/ThrownTogetherRenderer.h \
+           src/renderer/ThrownTogetherRenderer.h \
            src/CGAL_OGL_Polyhedron.h \
            src/gui/QGLView.h \
            src/gui/GLView.h \
@@ -305,11 +305,11 @@ HEADERS += src/version_check.h \
            src/engine/builtincontext.h \
            src/engine/modcontext.h \
            src/engine/evalcontext.h \
-           src/csgops.h \
-           src/CSGTreeNormalizer.h \
-           src/CSGTreeEvaluator.h \
-           src/dxfdata.h \
-           src/dxfdim.h \
+           src/engine/csgops.h \
+           src/engine/CSGTreeNormalizer.h \
+           src/engine/CSGTreeEvaluator.h \
+           src/porters/dxfdata.h \
+           src/porters/dxfdim.h \
            src/porters/export.h \
            src/stackcheck.h \
            src/engine/exceptions.h \
@@ -317,19 +317,19 @@ HEADERS += src/version_check.h \
            src/hash.h \
            src/engine/localscope.h \
            src/feature.h \
-           src/node.h \
-           src/csgnode.h \
-           src/offsetnode.h \
-           src/linearextrudenode.h \
-           src/rotateextrudenode.h \
-           src/projectionnode.h \
-           src/cgaladvnode.h \
-           src/importnode.h \
+           src/engine/node.h \
+           src/engine/csgnode.h \
+           src/engine/offsetnode.h \
+           src/engine/linearextrudenode.h \
+           src/engine/rotateextrudenode.h \
+           src/engine/projectionnode.h \
+           src/engine/cgaladvnode.h \
+           src/engine/importnode.h \
            src/porters/import.h \
-           src/transformnode.h \
-           src/colornode.h \
-           src/rendernode.h \
-           src/textnode.h \
+           src/engine/transformnode.h \
+           src/engine/colornode.h \
+           src/engine/rendernode.h \
+           src/engine/textnode.h \
            src/version.h \
            src/openscad.h \
            src/handle_dep.h \
@@ -344,20 +344,20 @@ HEADERS += src/version_check.h \
            src/engine/value.h \
            src/progress.h \
            src/gui/editor.h \
-           src/NodeVisitor.h \
+           src/engine/NodeVisitor.h \
            src/state.h \
            src/nodecache.h \
            src/nodedumper.h \
            src/ModuleCache.h \
            src/GeometryCache.h \
-           src/GeometryEvaluator.h \
+           src/engine/GeometryEvaluator.h \
            src/Tree.h \
-           src/DrawingCallback.h \
+           src/gui/DrawingCallback.h \
            src/gui/FreetypeRenderer.h \
            src/gui/FontCache.h \
            src/memory.h \
            src/engine/math/linalg.h \
-           src/Camera.h \
+           src/renderer/Camera.h \
            src/system-gl.h \
            src/boost-utils.h \
            src/LibraryInfo.h \
@@ -427,42 +427,42 @@ SOURCES += \
 SOURCES += \
            src/gui/ProgressWidget.cc \
            src/engine/math/linalg.cc \
-           src/Camera.cc \
+           src/renderer/Camera.cc \
            src/handle_dep.cc \
            src/engine/value.cc \
            src/engine/math/degree_trig.cc \
            src/engine/func.cc \
            src/engine/localscope.cc \
            src/feature.cc \
-           src/node.cc \
+           src/engine/node.cc \
            src/engine/context.cc \
            src/engine/builtincontext.cc \
            src/engine/modcontext.cc \
            src/engine/evalcontext.cc \
-           src/csgnode.cc \
-           src/CSGTreeNormalizer.cc \
-           src/CSGTreeEvaluator.cc \
+           src/engine/csgnode.cc \
+           src/engine/CSGTreeNormalizer.cc \
+           src/engine/CSGTreeEvaluator.cc \
            src/engine/math/Geometry.cc \
            src/engine/math/Polygon2d.cc \
            src/clipper-utils.cc \
            src/engine/math/polyset-utils.cc \
            src/engine/math/GeometryUtils.cc \
            src/engine/math/polyset.cc \
-           src/csgops.cc \
-           src/transform.cc \
+           src/engine/csgops.cc \
+           src/engine/transform.cc \
            src/color.cc \
-           src/primitives.cc \
-           src/projection.cc \
-           src/cgaladv.cc \
+           src/engine/primitives.cc \
+           src/engine/projection.cc \
+           src/engine/cgaladv.cc \
            src/surface.cc \
            src/engine/control.cc \
-           src/render.cc \
-           src/text.cc \
-           src/dxfdata.cc \
-           src/dxfdim.cc \
-           src/offset.cc \
-           src/linearextrude.cc \
-           src/rotateextrude.cc \
+           src/renderer/render.cc \
+           src/engine/text.cc \
+           src/porters/dxfdata.cc \
+           src/porters/dxfdim.cc \
+           src/engine/offset.cc \
+           src/engine/linearextrude.cc \
+           src/engine/rotateextrude.cc \
            src/printutils.cc \
            src/fileutils.cc \
            src/progress.cc \
@@ -473,17 +473,17 @@ SOURCES += \
            src/RenderStatistic.cc \
            \
            src/nodedumper.cc \
-           src/NodeVisitor.cc \
-           src/GeometryEvaluator.cc \
+           src/engine/NodeVisitor.cc \
+           src/engine/GeometryEvaluator.cc \
            src/ModuleCache.cc \
            src/GeometryCache.cc \
            src/Tree.cc \
-	       src/DrawingCallback.cc \
+	       src/gui/DrawingCallback.cc \
 	       src/gui/FreetypeRenderer.cc \
 	       src/gui/FontCache.cc \
            \
            src/settings.cc \
-           src/rendersettings.cc \
+           src/renderer/rendersettings.cc \
            src/initConfig.cc \
            src/gui/Preferences.cc \
            src/SettingsWriter.cc \
@@ -515,9 +515,9 @@ SOURCES += \
            src/porters/import_svg.cc \
            src/porters/import_amf.cc \
            src/porters/import_3mf.cc \
-           src/renderer.cc \
+           src/renderer/renderer.cc \
            src/colormap.cc \
-           src/ThrownTogetherRenderer.cc \
+           src/renderer/ThrownTogetherRenderer.cc \
            src/svg.cc \
            src/OffscreenView.cc \
            src/fbo.cc \
@@ -641,27 +641,27 @@ win* {
 }
 
 opencsg {
-  HEADERS += src/OpenCSGRenderer.h
-  SOURCES += src/OpenCSGRenderer.cc
+  HEADERS += src/renderer/OpenCSGRenderer.h
+  SOURCES += src/renderer/OpenCSGRenderer.cc
 }
 
 cgal {
-HEADERS += src/cgal.h \
-           src/cgalutils.h \
+HEADERS += src/engine/cgal.h \
+           src/engine/cgalutils.h \
            src/Reindexer.h \
            src/CGALCache.h \
-           src/CGALRenderer.h \
+           src/renderer/CGALRenderer.h \
            src/CGAL_Nef_polyhedron.h \
            src/cgalworker.h \
            src/Polygon2d-CGAL.h
 
-SOURCES += src/cgalutils.cc \
-           src/cgalutils-applyops.cc \
-           src/cgalutils-project.cc \
-           src/cgalutils-tess.cc \
-           src/cgalutils-polyhedron.cc \
+SOURCES += src/engine/cgalutils.cc \
+           src/engine/cgalutils-applyops.cc \
+           src/engine/cgalutils-project.cc \
+           src/engine/cgalutils-tess.cc \
+           src/engine/cgalutils-polyhedron.cc \
            src/CGALCache.cc \
-           src/CGALRenderer.cc \
+           src/renderer/CGALRenderer.cc \
            src/CGAL_Nef_polyhedron.cc \
            src/cgalworker.cc \
            src/Polygon2d-CGAL.cc \

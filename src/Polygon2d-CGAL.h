@@ -1,7 +1,7 @@
 #pragma once
 
 #include "engine/math/Polygon2d.h"
-#include "cgal.h"
+#include "engine/cgal.h"
 #include "CGAL_Nef_polyhedron.h"
 
 namespace Polygon2DCGAL {

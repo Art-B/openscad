@@ -1,6 +1,6 @@
 #ifdef ENABLE_CGAL
 #include "svg.h"
-#include "cgalutils.h"
+#include "engine/cgalutils.h"
 #include <boost/algorithm/string.hpp>
 #include <boost/lexical_cast.hpp>
 #include <map>

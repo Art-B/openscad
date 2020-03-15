@@ -4,12 +4,12 @@
 #include "CsgInfo.h"
 #include <stdio.h>
 #include "../engine/math/polyset.h"
-#include "rendersettings.h"
+#include "../renderer/rendersettings.h"
 
 #ifdef ENABLE_CGAL
-#include "CGALRenderer.h"
-#include "cgal.h"
-#include "cgalutils.h"
+#include "../renderer/CGALRenderer.h"
+#include "../engine/cgal.h"
+#include "../engine/cgalutils.h"
 #include "CGAL_Nef_polyhedron.h"
 
 static void setupCamera(Camera &cam, const BoundingBox &bbox)
@@ -46,10 +46,10 @@ bool export_png(const shared_ptr<const Geometry> &root_geom, const ViewOptions& 
 }
 
 #ifdef ENABLE_OPENCSG
-#include "OpenCSGRenderer.h"
+#include "../renderer/OpenCSGRenderer.h"
 #include <opencsg.h>
 #endif
-#include "ThrownTogetherRenderer.h"
+#include "../renderer/ThrownTogetherRenderer.h"
 
 std::unique_ptr<OffscreenView> prepare_preview(Tree &tree, const ViewOptions& options, Camera camera)
 {

@@ -1,6 +1,6 @@
 #include "CGAL_Nef_polyhedron.h"
-#include "cgal.h"
-#include "cgalutils.h"
+#include "engine/cgal.h"
+#include "engine/cgalutils.h"
 #include "printutils.h"
 #include "engine/math/polyset.h"
 #include "svg.h"

@@ -7,7 +7,7 @@
 #include <boost/range/adaptor/map.hpp>
 
 #include "Tree.h"
-#include "Camera.h"
+#include "../renderer/Camera.h"
 #include "memory.h"
 
 class PolySet;

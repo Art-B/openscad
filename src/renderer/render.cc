@@ -24,7 +24,7 @@
  *
  */
 
-#include "rendernode.h"
+#include "engine/rendernode.h"
 #include "engine/module.h"
 #include "engine/ModuleInstantiation.h"
 #include "engine/evalcontext.h"

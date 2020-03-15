@@ -1,5 +1,5 @@
 #include "progress.h"
-#include "node.h"
+#include "engine/node.h"
 
 int progress_report_count;
 int _progress_mark;

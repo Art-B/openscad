@@ -26,7 +26,7 @@
 
 #include "openscad.h"
 #include "engine/comment.h"
-#include "node.h"
+#include "engine/node.h"
 #include "engine/FileModule.h"
 #include "engine/ModuleInstantiation.h"
 #include "engine/builtincontext.h"
@@ -37,7 +37,7 @@
 #include "handle_dep.h"
 #include "feature.h"
 #include "parsersettings.h"
-#include "rendersettings.h"
+#include "renderer/rendersettings.h"
 #include "PlatformUtils.h"
 #include "LibraryInfo.h"
 #include "nodedumper.h"
@@ -45,7 +45,7 @@
 #include "osx/CocoaUtils.h"
 #include "gui/FontCache.h"
 #include "OffscreenView.h"
-#include "GeometryEvaluator.h"
+#include "engine/GeometryEvaluator.h"
 #include "RenderStatistic.h"
 #include "boost-utils.h"
 #include"parameter/parameterset.h"
@@ -55,13 +55,13 @@
 
 #ifdef ENABLE_CGAL
 #include "CGAL_Nef_polyhedron.h"
-#include "cgalutils.h"
+#include "engine/cgalutils.h"
 #endif
 
-#include "csgnode.h"
-#include "CSGTreeEvaluator.h"
+#include "engine/csgnode.h"
+#include "engine/CSGTreeEvaluator.h"
 
-#include "Camera.h"
+#include "renderer/Camera.h"
 #include <chrono>
 #include <boost/algorithm/string.hpp>
 #include <boost/algorithm/string/split.hpp>

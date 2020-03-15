@@ -24,7 +24,7 @@
  *
  */
 
-#include "colornode.h"
+#include "engine/colornode.h"
 #include "engine/module.h"
 #include "engine/ModuleInstantiation.h"
 #include "engine/evalcontext.h"

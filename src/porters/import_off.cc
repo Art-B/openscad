@@ -3,7 +3,7 @@
 #include "printutils.h"
 #include "engine/AST.h"
 #ifdef ENABLE_CGAL
-#include "cgalutils.h"
+#include "../engine/cgalutils.h"
 #endif
 
 PolySet *import_off(const std::string &filename, const Location &loc)

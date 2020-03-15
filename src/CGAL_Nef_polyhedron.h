@@ -1,7 +1,7 @@
 #pragma once
 
 #include "engine/math/Geometry.h"
-#include "cgal.h"
+#include "engine/cgal.h"
 #include "memory.h"
 #include <string>
 #include "engine/math/linalg.h"

@@ -5,7 +5,7 @@
 #include "engine/math/linalg.h"
 #include "memory.h"
 #include "colormap.h"
-#include "enums.h"
+#include "engine/enums.h"
 #include "engine/math/Geometry.h"
 
 #ifdef _MSC_VER // NULL

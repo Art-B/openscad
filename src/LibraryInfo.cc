@@ -18,7 +18,7 @@
 #define TOSTRING(x) STRINGIFY(x)
 
 #ifdef ENABLE_CGAL
-#include "cgal.h"
+#include "engine/cgal.h"
 #include <boost/algorithm/string.hpp>
 #if defined(__GNUG__)
 #define GCC_INT_VERSION (__GNUC__ * 10000 + __GNUC_MINOR__ * 100 )

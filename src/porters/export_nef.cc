@@ -30,8 +30,8 @@
 
 #ifdef ENABLE_CGAL
 #include "CGAL_Nef_polyhedron.h"
-#include "cgal.h"
-#include "cgalutils.h"
+#include "../engine/cgal.h"
+#include "../engine/cgalutils.h"
 #pragma push_macro("NDEBUG")
 #undef NDEBUG
 #include <CGAL/IO/Nef_polyhedron_iostream_3.h> // for dumping .nef3

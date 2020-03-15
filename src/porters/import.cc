@@ -25,7 +25,7 @@
  */
 
 #include "import.h"
-#include "importnode.h"
+#include "engine/importnode.h"
 
 #include "engine/module.h"
 #include "engine/ModuleInstantiation.h"
