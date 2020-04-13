@@ -32,7 +32,7 @@
 #include <QStatusBar>
 #include <QSettings>
 #include <boost/algorithm/string.hpp>
-#include "GeometryCache.h"
+#include "../engine/GeometryCache.h"
 #include "AutoUpdater.h"
 #include "feature.h"
 #ifdef ENABLE_CGAL

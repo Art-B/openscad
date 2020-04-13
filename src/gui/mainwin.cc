@@ -27,7 +27,7 @@
 #include "boost-utils.h"
 #include "../engine/comment.h"
 #include "openscad.h"
-#include "GeometryCache.h"
+#include "../engine/GeometryCache.h"
 #include "ModuleCache.h"
 #include "MainWindow.h"
 #include "OpenSCADApp.h"
@@ -47,7 +47,7 @@
 #include "AboutDialog.h"
 #include "FontListDialog.h"
 #include "LibraryInfoDialog.h"
-#include "RenderStatistic.h"
+#include "engine/RenderStatistic.h"
 #include "scintillaeditor.h"
 #ifdef ENABLE_OPENCSG
 #include "../engine/CSGTreeEvaluator.h"

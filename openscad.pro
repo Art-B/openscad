@@ -335,7 +335,7 @@ HEADERS += src/version_check.h \
            src/handle_dep.h \
            src/engine/math/Geometry.h \
            src/engine/math/Polygon2d.h \
-           src/clipper-utils.h \
+           src/engine/clipper-utils.h \
            src/engine/math/GeometryUtils.h \
            src/engine/math/polyset-utils.h \
            src/engine/math/polyset.h \
@@ -346,10 +346,10 @@ HEADERS += src/version_check.h \
            src/gui/editor.h \
            src/engine/NodeVisitor.h \
            src/state.h \
-           src/nodecache.h \
-           src/nodedumper.h \
+           src/engine/nodecache.h \
+           src/engine/nodedumper.h \
            src/ModuleCache.h \
-           src/GeometryCache.h \
+           src/engine/GeometryCache.h \
            src/engine/GeometryEvaluator.h \
            src/Tree.h \
            src/gui/DrawingCallback.h \
@@ -361,7 +361,7 @@ HEADERS += src/version_check.h \
            src/system-gl.h \
            src/boost-utils.h \
            src/LibraryInfo.h \
-           src/RenderStatistic.h \
+           src/engine/RenderStatistic.h \
            src/svg.h \
            src/mouseselector.h \
            \
@@ -444,7 +444,7 @@ SOURCES += \
            src/engine/CSGTreeEvaluator.cc \
            src/engine/math/Geometry.cc \
            src/engine/math/Polygon2d.cc \
-           src/clipper-utils.cc \
+           src/engine/clipper-utils.cc \
            src/engine/math/polyset-utils.cc \
            src/engine/math/GeometryUtils.cc \
            src/engine/math/polyset.cc \
@@ -470,13 +470,13 @@ SOURCES += \
            src/boost-utils.cc \
            src/PlatformUtils.cc \
            src/LibraryInfo.cc \
-           src/RenderStatistic.cc \
+           src/engine/RenderStatistic.cc \
            \
-           src/nodedumper.cc \
+           src/engine/nodedumper.cc \
            src/engine/NodeVisitor.cc \
            src/engine/GeometryEvaluator.cc \
            src/ModuleCache.cc \
-           src/GeometryCache.cc \
+           src/engine/GeometryCache.cc \
            src/Tree.cc \
 	       src/gui/DrawingCallback.cc \
 	       src/gui/FreetypeRenderer.cc \

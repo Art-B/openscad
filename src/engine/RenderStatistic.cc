@@ -24,7 +24,7 @@
  */
 
 #include "printutils.h"
-#include "GeometryCache.h"
+#include "engine/GeometryCache.h"
 #include "CGALCache.h"
 #include "engine/math/polyset.h"
 #include "engine/math/Polygon2d.h"
