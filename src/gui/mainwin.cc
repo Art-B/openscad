@@ -64,7 +64,7 @@
 #endif
 #include "PlatformUtils.h"
 #ifdef OPENSCAD_UPDATER
-#include "AutoUpdater.h"
+#include "gui/AutoUpdater.h"
 #endif
 #include "tabmanager.h"
 

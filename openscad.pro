@@ -376,7 +376,7 @@ HEADERS += src/version_check.h \
            src/gui/Dock.h \
            src/gui/Console.h \
            src/gui/ErrorLog.h \
-           src/AutoUpdater.h \
+           src/gui/AutoUpdater.h \
            src/gui/launchingscreen.h \
            src/gui/LibraryInfoDialog.h \
            \
@@ -491,7 +491,7 @@ SOURCES += \
            src/gui/editor.cc \
            src/gui/GLView.cc \
            src/gui/QGLView.cc \
-           src/AutoUpdater.cc \
+           src/gui/AutoUpdater.cc \
            \
            src/hash.cc \
            src/engine/GroupModule.cc \

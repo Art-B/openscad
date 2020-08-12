@@ -589,7 +589,7 @@ set(GUI_SOURCES
   src/settings.cc
   src/gui/tabmanager.cc
   src/gui/tabwidget.cc
-  src/AutoUpdater.cc
+  src/gui/AutoUpdater.cc
   src/gui/Console.cc
   src/gui/Dock.cc
   src/gui/ErrorLog.cc
