@@ -28,7 +28,7 @@
 #include "../engine/comment.h"
 #include "openscad.h"
 #include "../engine/GeometryCache.h"
-#include "ModuleCache.h"
+#include "../engine/ModuleCache.h"
 #include "MainWindow.h"
 #include "OpenSCADApp.h"
 #include "parsersettings.h"

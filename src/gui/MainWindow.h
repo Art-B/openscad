@@ -9,7 +9,7 @@
 #include "engine/builtincontext.h"
 #include "engine/module.h"
 #include "engine/ModuleInstantiation.h"
-#include "Tree.h"
+#include "engine/Tree.h"
 #include "memory.h"
 #include "editor.h"
 #include "porters/export.h"

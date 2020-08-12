@@ -1,7 +1,7 @@
 #pragma once
 
 #include "engine/csgnode.h"
-#include "Tree.h"
+#include "engine/Tree.h"
 #include "engine/GeometryEvaluator.h"
 #include "engine/CSGTreeEvaluator.h"
 #include "engine/CSGTreeNormalizer.h"

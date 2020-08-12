@@ -300,7 +300,7 @@ HEADERS += src/version_check.h \
            src/StatCache.h \
            src/scadapi.h \
            src/engine/builtin.h \
-           src/calc.h \
+           src/engine/calc.h \
            src/engine/context.h \
            src/engine/builtincontext.h \
            src/engine/modcontext.h \
@@ -348,10 +348,10 @@ HEADERS += src/version_check.h \
            src/state.h \
            src/engine/nodecache.h \
            src/engine/nodedumper.h \
-           src/ModuleCache.h \
+           src/engine/ModuleCache.h \
            src/engine/GeometryCache.h \
            src/engine/GeometryEvaluator.h \
-           src/Tree.h \
+           src/engine/Tree.h \
            src/gui/DrawingCallback.h \
            src/gui/FreetypeRenderer.h \
            src/gui/FontCache.h \
@@ -363,7 +363,7 @@ HEADERS += src/version_check.h \
            src/LibraryInfo.h \
            src/engine/RenderStatistic.h \
            src/svg.h \
-           src/mouseselector.h \
+           src/gui/mouseselector.h \
            \
            src/OffscreenView.h \
            src/OffscreenContext.h \
@@ -371,7 +371,7 @@ HEADERS += src/version_check.h \
            src/fbo.h \
            src/imageutils.h \
            src/system-gl.h \
-           src/CsgInfo.h \
+           src/engine/CsgInfo.h \
            \
            src/gui/Dock.h \
            src/gui/Console.h \
@@ -450,7 +450,7 @@ SOURCES += \
            src/engine/math/polyset.cc \
            src/engine/csgops.cc \
            src/engine/transform.cc \
-           src/color.cc \
+           src/engine/color.cc \
            src/engine/primitives.cc \
            src/engine/projection.cc \
            src/engine/cgaladv.cc \
@@ -475,9 +475,9 @@ SOURCES += \
            src/engine/nodedumper.cc \
            src/engine/NodeVisitor.cc \
            src/engine/GeometryEvaluator.cc \
-           src/ModuleCache.cc \
+           src/engine/ModuleCache.cc \
            src/engine/GeometryCache.cc \
-           src/Tree.cc \
+           src/engine/Tree.cc \
 	       src/gui/DrawingCallback.cc \
 	       src/gui/FreetypeRenderer.cc \
 	       src/gui/FontCache.cc \
@@ -499,7 +499,7 @@ SOURCES += \
            src/StatCache.cc \
            src/scadapi.cc \
            src/engine/builtin.cc \
-           src/calc.cc \
+           src/engine/calc.cc \
            src/porters/export.cc \
            src/porters/export_stl.cc \
            src/porters/export_amf.cc \
@@ -541,7 +541,7 @@ SOURCES += \
            src/gui/LibraryInfoDialog.cc\
            \
            src/engine/comment.cpp \
-           src/mouseselector.cc \
+           src/gui/mouseselector.cc \
            \
            src/parameter/ParameterWidget.cc\
            src/parameter/parameterobject.cpp \
@@ -653,7 +653,7 @@ HEADERS += src/engine/cgal.h \
            src/renderer/CGALRenderer.h \
            src/CGAL_Nef_polyhedron.h \
            src/cgalworker.h \
-           src/Polygon2d-CGAL.h
+           src/engine/Polygon2d-CGAL.h
 
 SOURCES += src/engine/cgalutils.cc \
            src/engine/cgalutils-applyops.cc \
@@ -664,7 +664,7 @@ SOURCES += src/engine/cgalutils.cc \
            src/renderer/CGALRenderer.cc \
            src/CGAL_Nef_polyhedron.cc \
            src/cgalworker.cc \
-           src/Polygon2d-CGAL.cc \
+           src/engine/Polygon2d-CGAL.cc \
            src/porters/import_nef.cc
 }
 

@@ -1,7 +1,7 @@
 #include "cgalworker.h"
 #include <QThread>
 
-#include "Tree.h"
+#include "engine/Tree.h"
 #include "engine/GeometryEvaluator.h"
 #include "progress.h"
 #include "printutils.h"

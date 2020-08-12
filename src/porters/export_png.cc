@@ -1,7 +1,7 @@
 #include "export.h"
 #include "printutils.h"
 #include "OffscreenView.h"
-#include "CsgInfo.h"
+#include "../engine/CsgInfo.h"
 #include <stdio.h>
 #include "../engine/math/polyset.h"
 #include "../renderer/rendersettings.h"

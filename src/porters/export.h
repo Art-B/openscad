@@ -6,7 +6,7 @@
 #include <boost/range/algorithm.hpp>
 #include <boost/range/adaptor/map.hpp>
 
-#include "Tree.h"
+#include "../engine/Tree.h"
 #include "../renderer/Camera.h"
 #include "memory.h"
 

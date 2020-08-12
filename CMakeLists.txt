@@ -408,19 +408,19 @@ set(CORE_SOURCES
   src/boost-utils.cc
   src/engine/builtin.cc
   src/engine/builtincontext.cc
-  src/calc.cc
-  src/cgaladv.cc
-  src/clipper-utils.cc
-  src/color.cc
+  src/engine/calc.cc
+  src/engine/cgaladv.cc
+  src/engine/clipper-utils.cc
+  src/engine/color.cc
   src/colormap.cc
-  src/context.cc
-  src/control.cc
-  src/comment.cpp
-  src/csgnode.cc
-  src/csgops.cc
+  src/engine/context.cc
+  src/engine/control.cc
+  src/engine/comment.cpp
+  src/engine/csgnode.cc
+  src/engine/csgops.cc
   src/engine/math/degree_trig.cc
-  src/dxfdata.cc
-  src/dxfdim.cc
+  src/porters/dxfdata.cc
+  src/porters/dxfdim.cc
   src/engine/evalcontext.cc
   src/porters/export.cc
   src/porters/export_3mf.cc
@@ -444,52 +444,52 @@ set(CORE_SOURCES
   src/porters/import_off.cc
   src/porters/import_svg.cc
   src/engine/math/linalg.cc
-  src/linearextrude.cc
+  src/engine/linearextrude.cc
   src/engine/localscope.cc
   src/engine/modcontext.cc
   src/engine/module.cc
-  src/node.cc
-  src/nodedumper.cc
-  src/offset.cc
+  src/engine/node.cc
+  src/engine/nodedumper.cc
+  src/engine/offset.cc
   src/parsersettings.cc
   src/engine/math/polyset.cc
   src/engine/math/polyset-utils.cc
-  src/primitives.cc
+  src/engine/primitives.cc
   src/printutils.cc
   src/progress.cc
-  src/projection.cc
-  src/render.cc
-  src/rendersettings.cc
-  src/rotateextrude.cc
+  src/engine/projection.cc
+  src/renderer/render.cc
+  src/renderer/rendersettings.cc
+  src/engine/rotateextrude.cc
   src/stackcheck.h
   src/surface.cc
   src/svg.cc
-  src/text.cc
-  src/transform.cc
+  src/libsvg/text.cc
+  src/engine/transform.cc
   src/engine/value.cc
   src/version.cc
   src/engine/Assignment.cc
   src/engine/AST.cc
-  src/Camera.cc
-  src/CSGTreeNormalizer.cc
-  src/DrawingCallback.cc
+  src/renderer/Camera.cc
+  src/engine/CSGTreeNormalizer.cc
+  src/gui/DrawingCallback.cc
   src/engine/FileModule.cc
   src/gui/FontCache.cc
   src/gui/FreetypeRenderer.cc
   src/engine/math/Geometry.cc
-  src/GeometryCache.cc
+  src/engine/GeometryCache.cc
   src/engine/math/GeometryUtils.cc
   src/engine/GroupModule.cc
   src/LibraryInfo.cc
   src/engine/ModuleInstantiation.cc
-  src/ModuleCache.cc
-  src/NodeVisitor.cc
+  src/engine/ModuleCache.cc
+  src/engine/NodeVisitor.cc
   src/PlatformUtils.cc
   src/engine/math/Polygon2d.cc
-  src/RenderStatistic.cc
+  src/engine/RenderStatistic.cc
   src/StatCache.cc
   src/engine/UserModule.cc
-  src/Tree.cc
+  src/engine/Tree.cc
   src/ext/lodepng/lodepng.cpp
   src/ext/polyclipping/clipper.cpp
   src/ext/libtess2/Source/bucketalloc.c
@@ -523,18 +523,18 @@ set(CORE_SOURCES
   ${BISON_comment_parser_OUTPUTS})
 
 set(CGAL_SOURCES
-  src/cgalutils.cc
-  src/cgalutils-applyops.cc
-  src/cgalutils-polyhedron.cc
-  src/cgalutils-project.cc
-  src/cgalutils-tess.cc
+  src/engine/cgalutils.cc
+  src/engine/cgalutils-applyops.cc
+  src/engine/cgalutils-polyhedron.cc
+  src/engine/cgalutils-project.cc
+  src/engine/cgalutils-tess.cc
   src/porters/export_nef.cc
   src/porters/import_nef.cc
   src/CGAL_Nef_polyhedron.cc
   src/CGALCache.cc
-  src/CSGTreeEvaluator.cc
-  src/Polygon2d-CGAL.cc
-  src/GeometryEvaluator.cc)
+  src/engine/CSGTreeEvaluator.cc
+  src/engine/Polygon2d-CGAL.cc
+  src/engine/GeometryEvaluator.cc)
 
 #
 # Offscreen OpenGL context source code
@@ -555,14 +555,14 @@ else()
     src/porters/export_png.cc
     src/fbo.cc
     src/imageutils.cc
-    src/render.cc
-    src/renderer.cc
+    src/renderer/render.cc
+    src/renderer/renderer.cc
     src/system-gl.cc
-    src/CGALRenderer.cc
+    src/renderer/CGALRenderer.cc
     src/gui/GLView.cc
     src/OffscreenView.cc
-    src/OpenCSGRenderer.cc
-    src/ThrownTogetherRenderer.cc)
+    src/renderer/OpenCSGRenderer.cc
+    src/renderer/ThrownTogetherRenderer.cc)
 endif()
 
 
@@ -582,7 +582,7 @@ set(GUI_SOURCES
   src/initConfig.cc
   src/gui/launchingscreen.cc
   src/gui/mainwin.cc
-  src/mouseselector.cc
+  src/gui/mouseselector.cc
   src/scadapi.cc
   src/scadlexer.cpp
   src/scintillaeditor.cpp
@@ -593,7 +593,7 @@ set(GUI_SOURCES
   src/gui/Console.cc
   src/gui/Dock.cc
   src/gui/ErrorLog.cc
-  src/EventFilter.h
+  src/gui/EventFilter.h
   src/gui/FontListDialog.cc
   src/gui/FontListTableView.cc
   src/gui/LibraryInfoDialog.cc

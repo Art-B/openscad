@@ -30,7 +30,7 @@
 #include "dxfdata.h"
 #include "grid.h"
 #include "printutils.h"
-#include "calc.h"
+#include "engine/calc.h"
 
 #include <fstream>
 #include <assert.h>

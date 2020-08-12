@@ -1,5 +1,5 @@
 #include "Tree.h"
-#include "engine/nodedumper.h"
+#include "nodedumper.h"
 #include "printutils.h"
 
 #include <assert.h>
