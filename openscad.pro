@@ -597,8 +597,8 @@ HEADERS += src/ext/libtess2/Include/tesselator.h \
            src/ext/libtess2/Source/tess.h
 
 has_qt5 {
-  HEADERS += src/Network.h src/NetworkSignal.h src/PrintService.h src/OctoPrint.h src/gui/PrintInitDialog.h
-  SOURCES += src/PrintService.cc src/OctoPrint.cc src/gui/PrintInitDialog.cc
+  HEADERS += src/octoprint/Network.h src/octoprint/NetworkSignal.h src/octoprint/PrintService.h src/octoprint/OctoPrint.h src/gui/PrintInitDialog.h
+  SOURCES += src/octoprint/PrintService.cc src/octoprint/OctoPrint.cc src/gui/PrintInitDialog.cc
 }
 
 has_qt5:unix:!macx {

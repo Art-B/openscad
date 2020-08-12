@@ -597,12 +597,12 @@ set(GUI_SOURCES
   src/gui/FontListDialog.cc
   src/gui/FontListTableView.cc
   src/gui/LibraryInfoDialog.cc
-  src/OctoPrint.cc
+  src/octoprint/OctoPrint.cc
   src/gui/OpenCSGWarningDialog.cc
   src/OpenSCADApp.cc
   src/gui/Preferences.cc
   src/gui/PrintInitDialog.cc
-  src/PrintService.cc
+  src/octoprint/PrintService.cc
   src/gui/ProgressWidget.cc
   src/gui/QGLView.cc
   src/gui/QSettingsCached.cc
@@ -635,8 +635,8 @@ set(GUI_SOURCES
 set(GUI_HEADERS
   src/gui/AboutDialog.h
   src/gui/MainWindow.h
-  src/Network.h
-  src/NetworkSignal.h
+  src/octoprint/Network.h
+  src/octoprint/NetworkSignal.h
   )
 
 file(GLOB UIs src/*.ui)

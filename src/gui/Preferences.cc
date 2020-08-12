@@ -43,7 +43,7 @@
 #include "QSettingsCached.h"
 #include "input/InputDriverManager.h"
 #include "SettingsWriter.h"
-#include "OctoPrint.h"
+#include "../octoprint/OctoPrint.h"
 
 Preferences *Preferences::instance = nullptr;
 

@@ -99,8 +99,8 @@
 
 #define QT_HTML_ESCAPE(qstring) (qstring).toHtmlEscaped()
 #define ENABLE_3D_PRINTING
-#include "OctoPrint.h"
-#include "PrintService.h"
+#include "octoprint/OctoPrint.h"
+#include "octoprint/PrintService.h"
 
 #include <fstream>
 

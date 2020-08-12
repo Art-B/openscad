@@ -26,7 +26,7 @@
 
 #include <QString>
 
-#include "PrintService.h"
+#include "octoprint/PrintService.h"
 #include "PrintInitDialog.h"
 
 PrintInitDialog::PrintInitDialog()
@@ -59,7 +59,7 @@ void PrintInitDialog::on_printServiceButton_clicked()
 
 void PrintInitDialog::on_octoPrintButton_clicked()
 {
-	this->textBrowser->setSource(QUrl{"qrc:/src/OctoPrintInfo.html"});
+	this->textBrowser->setSource(QUrl{"qrc:/src/gui/OctoPrintInfo.html"});
 	this->result = print_service_t::OCTOPRINT;
 	this->okButton->setEnabled(true);
 }
