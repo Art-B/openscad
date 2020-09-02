@@ -28,7 +28,7 @@
 #include <cmath>
 
 #include "dxfdata.h"
-#include "grid.h"
+#include "../engine/grid.h"
 #include "printutils.h"
 #include "engine/calc.h"
 

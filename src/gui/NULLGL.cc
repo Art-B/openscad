@@ -41,7 +41,7 @@ void CGALRenderer::setColorScheme(const ColorScheme &cs){assert(false && "not im
 
 
 
-#include "system-gl.h"
+#include "renderer/system-gl.h"
 
 double gl_version() { return -1; }
 std::string glew_dump() { return std::string("GL Renderer: NULLGL Glew\n"); }

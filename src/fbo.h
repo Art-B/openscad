@@ -1,6 +1,6 @@
 #pragma once
 
-#include "system-gl.h"
+#include "renderer/system-gl.h"
 #include <stddef.h> // size_t
 
 struct fbo_t

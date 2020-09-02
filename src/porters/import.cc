@@ -31,7 +31,7 @@
 #include "engine/ModuleInstantiation.h"
 #include "../engine/math/polyset.h"
 #ifdef ENABLE_CGAL
-#include "CGAL_Nef_polyhedron.h"
+#include "../engine/CGAL_Nef_polyhedron.h"
 #endif
 #include "../engine/math/Polygon2d.h"
 #include "engine/evalcontext.h"

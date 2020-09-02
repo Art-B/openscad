@@ -15,10 +15,10 @@ For more info:
 #include <windows.h>
 #include <vector>
 
-#include "OffscreenContext.h"
+#include "../renderer/OffscreenContext.h"
 #include "printutils.h"
 #include "imageutils.h"
-#include "system-gl.h"
+#include "../renderer/system-gl.h"
 #include "fbo.h"
 
 #include <GL/gl.h> // must be included after glew.h

@@ -39,12 +39,12 @@
 #include "parsersettings.h"
 #include "renderer/rendersettings.h"
 #include "PlatformUtils.h"
-#include "LibraryInfo.h"
+#include "gui/LibraryInfo.h"
 #include "engine/nodedumper.h"
 #include "stackcheck.h"
 #include "osx/CocoaUtils.h"
 #include "gui/FontCache.h"
-#include "OffscreenView.h"
+#include "renderer/OffscreenView.h"
 #include "engine/GeometryEvaluator.h"
 #include "engine/RenderStatistic.h"
 #include "boost-utils.h"
@@ -54,7 +54,7 @@
 #include <fstream>
 
 #ifdef ENABLE_CGAL
-#include "CGAL_Nef_polyhedron.h"
+#include "engine/CGAL_Nef_polyhedron.h"
 #include "engine/cgalutils.h"
 #endif
 

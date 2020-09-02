@@ -110,12 +110,12 @@
 
 #ifdef ENABLE_CGAL
 
-#include "CGALCache.h"
+#include "../engine/CGALCache.h"
 #include "../engine/GeometryEvaluator.h"
 #include "../renderer/CGALRenderer.h"
-#include "CGAL_Nef_polyhedron.h"
+#include "../engine/CGAL_Nef_polyhedron.h"
 #include "../engine/cgal.h"
-#include "cgalworker.h"
+#include "../engine/cgalworker.h"
 #include "../engine/cgalutils.h"
 
 #endif // ENABLE_CGAL

@@ -1,7 +1,7 @@
 #pragma once
 
 #include "renderer.h"
-#include "CGAL_Nef_polyhedron.h"
+#include "../engine/CGAL_Nef_polyhedron.h"
 
 class CGALRenderer : public Renderer
 {

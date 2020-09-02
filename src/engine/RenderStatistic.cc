@@ -24,10 +24,10 @@
  */
 
 #include "printutils.h"
-#include "engine/GeometryCache.h"
+#include "GeometryCache.h"
 #include "CGALCache.h"
-#include "engine/math/polyset.h"
-#include "engine/math/Polygon2d.h"
+#include "math/polyset.h"
+#include "math/Polygon2d.h"
 #include "boost-utils.h"
 #ifdef ENABLE_CGAL
 #include "CGAL_Nef_polyhedron.h"

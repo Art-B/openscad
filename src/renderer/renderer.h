@@ -1,7 +1,7 @@
 #pragma once
 
 #include "gui/GLView.h"
-#include "system-gl.h"
+#include "renderer/system-gl.h"
 #include "engine/math/linalg.h"
 #include "memory.h"
 #include "colormap.h"

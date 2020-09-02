@@ -9,7 +9,7 @@
 #include "math/GeometryUtils.h"
 #include "Reindexer.h"
 #include "math/linalg.h"
-#include "grid.h"
+#include "../engine/grid.h"
 #include "printutils.h"
 
 static void export_stl(const IndexedTriangleMesh &trimesh, std::ostream &output)

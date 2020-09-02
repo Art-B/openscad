@@ -384,7 +384,7 @@ if(APPLE)
   set(PLATFORM_LIBS ${COCOA_LIBRARY})
 elseif(UNIX)
   message(STATUS "Offscreen OpenGL Context - using Unix GLX on X11")
-  set(PLATFORM_SOURCES src/imageutils-lodepng.cc src/posix/PlatformUtils-posix.cc)
+  set(PLATFORM_SOURCES src/renderer/imageutils-lodepng.cc src/posix/PlatformUtils-posix.cc)
   if(NULLGL)
     add_definitions(-DOPENSCAD_OS="Unix")
   else()
@@ -395,7 +395,7 @@ elseif(UNIX)
 elseif(WIN32)
   add_definitions(-DNOGDI)
   message(STATUS "Offscreen OpenGL Context - using Microsoft WGL")
-  set(PLATFORM_SOURCES src/imageutils-lodepng.cc src/win/PlatformUtils-win.cc)
+  set(PLATFORM_SOURCES src/renderer/imageutils-lodepng.cc src/win/PlatformUtils-win.cc)
   if(NULLGL)
     add_definitions(-DOPENSCAD_OS="Windows")
   else()
@@ -543,24 +543,24 @@ if(NULLGL)
   message(STATUS "NULLGL is set. Overriding OpenGL(TM) settings")
   set(OFFSCREEN_SOURCES
     src/porters/export_png.cc
-    src/imageutils.cc
+    src/renderer/imageutils.cc
     src/renderer.cc
     src/render.cc
     src/NULLGL.cc # contains several 'nullified' versions of above .cc files
-    src/OffscreenView.cc
-    src/OffscreenContextNULL.cc
+    src/renderer/OffscreenView.cc
+    src/renderer/OffscreenContextNULL.cc
     src/${OFFSCREEN_IMGUTILS_SOURCE})
 else()
   set(OFFSCREEN_SOURCES
     src/porters/export_png.cc
     src/fbo.cc
-    src/imageutils.cc
+    src/renderer/imageutils.cc
     src/renderer/render.cc
     src/renderer/renderer.cc
-    src/system-gl.cc
+    src/renderer/system-gl.cc
     src/renderer/CGALRenderer.cc
     src/gui/GLView.cc
-    src/OffscreenView.cc
+    src/renderer/OffscreenView.cc
     src/renderer/OpenCSGRenderer.cc
     src/renderer/ThrownTogetherRenderer.cc)
 endif()

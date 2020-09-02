@@ -29,7 +29,7 @@
 #include <cassert>
 #include <algorithm>
 #include "calc.h"
-#include "grid.h"
+#include "engine/grid.h"
 #include "engine/math/degree_trig.h"
 
 /*!

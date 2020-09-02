@@ -1,6 +1,6 @@
 #include "export.h"
 #include "printutils.h"
-#include "OffscreenView.h"
+#include "../renderer/OffscreenView.h"
 #include "../engine/CsgInfo.h"
 #include <stdio.h>
 #include "../engine/math/polyset.h"
@@ -10,7 +10,7 @@
 #include "../renderer/CGALRenderer.h"
 #include "../engine/cgal.h"
 #include "../engine/cgalutils.h"
-#include "CGAL_Nef_polyhedron.h"
+#include "../engine/CGAL_Nef_polyhedron.h"
 
 static void setupCamera(Camera &cam, const BoundingBox &bbox)
 {

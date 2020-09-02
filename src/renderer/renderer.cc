@@ -1,13 +1,13 @@
 #include "renderer.h"
 #include "rendersettings.h"
-#include "engine/math/Geometry.h"
-#include "engine/math/polyset.h"
-#include "engine/math/Polygon2d.h"
+#include "../engine/math/Geometry.h"
+#include "../engine/math/polyset.h"
+#include "../engine/math/Polygon2d.h"
 #include "colormap.h"
 #include "printutils.h"
 
-#include "engine/math/polyset-utils.h"
-#include "grid.h"
+#include "../engine/math/polyset-utils.h"
+#include "../engine/grid.h"
 #include <Eigen/LU>
 
 bool Renderer::getColor(Renderer::ColorMode colormode, Color4f &col) const

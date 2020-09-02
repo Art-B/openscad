@@ -1,9 +1,9 @@
 #include "CGAL_Nef_polyhedron.h"
-#include "engine/cgal.h"
-#include "engine/cgalutils.h"
-#include "printutils.h"
-#include "engine/math/polyset.h"
-#include "svg.h"
+#include "cgal.h"
+#include "cgalutils.h"
+#include "../printutils.h"
+#include "math/polyset.h"
+#include "../svg.h"
 
 CGAL_Nef_polyhedron::CGAL_Nef_polyhedron(CGAL_Nef_polyhedron3 *p)
 {

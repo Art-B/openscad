@@ -28,7 +28,7 @@
 #include <CGAL/Nef_3/SNC_decorator.h>
 #pragma pop_macro("NDEBUG")
 
-#include "system-gl.h"
+#include "../../renderer/system-gl.h"
 #include <cstdlib>
 
 // Overridden in CGAL_renderer

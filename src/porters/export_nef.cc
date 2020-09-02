@@ -29,7 +29,7 @@
 #include "../engine/math/Geometry.h"
 
 #ifdef ENABLE_CGAL
-#include "CGAL_Nef_polyhedron.h"
+#include "../engine/CGAL_Nef_polyhedron.h"
 #include "../engine/cgal.h"
 #include "../engine/cgalutils.h"
 #pragma push_macro("NDEBUG")

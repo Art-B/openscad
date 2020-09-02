@@ -36,9 +36,9 @@
 #include "printutils.h"
 
 #include "CGALRenderer.h"
-#include "CGAL_OGL_Polyhedron.h"
-#include "CGAL_Nef_polyhedron.h"
-#include "engine/cgal.h"
+#include "../engine/CGAL_OGL_Polyhedron.h"
+#include "../engine/CGAL_Nef_polyhedron.h"
+#include "../engine/cgal.h"
 
 //#include "Preferences.h"
 

@@ -280,7 +280,7 @@ HEADERS += src/version_check.h \
            src/renderer/rendersettings.h \
            src/colormap.h \
            src/renderer/ThrownTogetherRenderer.h \
-           src/CGAL_OGL_Polyhedron.h \
+           src/engine/CGAL_OGL_Polyhedron.h \
            src/gui/QGLView.h \
            src/gui/GLView.h \
            src/gui/MainWindow.h \
@@ -313,7 +313,7 @@ HEADERS += src/version_check.h \
            src/porters/export.h \
            src/stackcheck.h \
            src/engine/exceptions.h \
-           src/grid.h \
+           src/engine/grid.h \
            src/hash.h \
            src/engine/localscope.h \
            src/feature.h \
@@ -358,19 +358,19 @@ HEADERS += src/version_check.h \
            src/memory.h \
            src/engine/math/linalg.h \
            src/renderer/Camera.h \
-           src/system-gl.h \
+           src/renderer/system-gl.h \
            src/boost-utils.h \
-           src/LibraryInfo.h \
+           src/gui/LibraryInfo.h \
            src/engine/RenderStatistic.h \
            src/svg.h \
            src/gui/mouseselector.h \
            \
-           src/OffscreenView.h \
-           src/OffscreenContext.h \
-           src/OffscreenContextAll.hpp \
+           src/renderer/OffscreenView.h \
+           src/renderer/OffscreenContext.h \
+           src/renderer/OffscreenContextAll.hpp \
            src/fbo.h \
-           src/imageutils.h \
-           src/system-gl.h \
+           src/renderer/imageutils.h \
+           src/renderer/system-gl.h \
            src/engine/CsgInfo.h \
            \
            src/gui/Dock.h \
@@ -469,7 +469,7 @@ SOURCES += \
            src/parsersettings.cc \
            src/boost-utils.cc \
            src/PlatformUtils.cc \
-           src/LibraryInfo.cc \
+           src/gui/LibraryInfo.cc \
            src/engine/RenderStatistic.cc \
            \
            src/engine/nodedumper.cc \
@@ -519,10 +519,10 @@ SOURCES += \
            src/colormap.cc \
            src/renderer/ThrownTogetherRenderer.cc \
            src/svg.cc \
-           src/OffscreenView.cc \
+           src/renderer/OffscreenView.cc \
            src/fbo.cc \
-           src/system-gl.cc \
-           src/imageutils.cc \
+           src/renderer/system-gl.cc \
+           src/renderer/imageutils.cc \
            \
            src/version.cc \
            src/openscad.cc \
@@ -628,7 +628,7 @@ linux: {
 }
 
 unix:!macx {
-  SOURCES += src/imageutils-lodepng.cc
+  SOURCES += src/renderer/imageutils-lodepng.cc
   SOURCES += src/posix/OffscreenContextGLX.cc
 }
 macx {
@@ -636,7 +636,7 @@ macx {
   OBJECTIVE_SOURCES += src/osx/OffscreenContextCGL.mm
 }
 win* {
-  SOURCES += src/imageutils-lodepng.cc
+  SOURCES += src/renderer/imageutils-lodepng.cc
   SOURCES += src/win/OffscreenContextWGL.cc
 }
 
@@ -649,10 +649,10 @@ cgal {
 HEADERS += src/engine/cgal.h \
            src/engine/cgalutils.h \
            src/Reindexer.h \
-           src/CGALCache.h \
+           src/engine/CGALCache.h \
            src/renderer/CGALRenderer.h \
-           src/CGAL_Nef_polyhedron.h \
-           src/cgalworker.h \
+           src/engine/CGAL_Nef_polyhedron.h \
+           src/engine/cgalworker.h \
            src/engine/Polygon2d-CGAL.h
 
 SOURCES += src/engine/cgalutils.cc \
@@ -660,10 +660,10 @@ SOURCES += src/engine/cgalutils.cc \
            src/engine/cgalutils-project.cc \
            src/engine/cgalutils-tess.cc \
            src/engine/cgalutils-polyhedron.cc \
-           src/CGALCache.cc \
+           src/engine/CGALCache.cc \
            src/renderer/CGALRenderer.cc \
-           src/CGAL_Nef_polyhedron.cc \
-           src/cgalworker.cc \
+           src/engine/CGAL_Nef_polyhedron.cc \
+           src/engine/cgalworker.cc \
            src/engine/Polygon2d-CGAL.cc \
            src/porters/import_nef.cc
 }

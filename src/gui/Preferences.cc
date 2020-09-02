@@ -36,7 +36,7 @@
 #include "AutoUpdater.h"
 #include "feature.h"
 #ifdef ENABLE_CGAL
-#include "CGALCache.h"
+#include "../engine/CGALCache.h"
 #endif
 #include "colormap.h"
 #include "../renderer/rendersettings.h"

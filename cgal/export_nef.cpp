@@ -6,10 +6,10 @@
 #include <fstream>
 #include <locale.h>
 
-#include "cgalutils.h"
+#include "../engine/cgalutils.h"
 #include "export.h"
-#include "../math/polyset.h"
-#include "CGAL_Nef_polyhedron.h"
+#include "../engine/math/polyset.h"
+#include "../engine/CGAL_Nef_polyhedron.h"
 
 #pragma push_macro("NDEBUG")
 #undef NDEBUG

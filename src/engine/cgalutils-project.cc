@@ -4,10 +4,10 @@
 #ifdef ENABLE_CGAL
 
 #include "cgalutils.h"
-#include "engine/math/polyset.h"
+#include "math/polyset.h"
 #include "printutils.h"
-#include "engine/math/Polygon2d.h"
-#include "engine/math/polyset-utils.h"
+#include "math/Polygon2d.h"
+#include "math/polyset-utils.h"
 #include "grid.h"
 #include "node.h"
 

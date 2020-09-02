@@ -1,4 +1,4 @@
-#include "../OffscreenContext.h"
+#include "../renderer/OffscreenContext.h"
 #include "../imageutils.h"
 #include "../fbo.h"
 #include <iostream>
@@ -19,7 +19,7 @@ struct OffscreenContext
   fbo_t *fbo;
 };
 
-#include "OffscreenContextAll.hpp"
+#include "../renderer/OffscreenContextAll.hpp"
 
 std::string offscreen_context_getinfo(OffscreenContext *)
 {
