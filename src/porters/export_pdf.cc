@@ -2,8 +2,8 @@
 #include "../engine/math/polyset.h"
 #include "../engine/math/polyset-utils.h"
 #include "../common/printutils.h"
-#include "version.h"
-#include "version_helper.h"
+#include "../gui/version.h"
+#include "../common/version_helper.h"
 
 #include <string>
 #include <cmath>

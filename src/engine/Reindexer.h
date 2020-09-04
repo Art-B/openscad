@@ -4,7 +4,7 @@
 #include <functional>
 #include <vector>
 #include <algorithm>
-#include "hash.h"
+#include "math/hash.h"
 
 /*!
   Reindexes a collection of elements of type T.

@@ -19,7 +19,7 @@ For more info:
 #include "../common/printutils.h"
 #include "../renderer/imageutils.h"
 #include "../renderer/system-gl.h"
-#include "fbo.h"
+#include "../renderer/fbo.h"
 
 #include <GL/gl.h> // must be included after glew.h
 

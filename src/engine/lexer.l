@@ -29,9 +29,9 @@
 %{
 
 #include <glib.h>
-#include "handle_dep.h"
+#include "engine/handle_dep.h"
 #include "common/printutils.h"
-#include "parsersettings.h"
+#include "engine/parsersettings.h"
 #include "engine/Assignment.h"
 #include "parser.hxx"
 #include "engine/FileModule.h"

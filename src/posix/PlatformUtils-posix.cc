@@ -11,7 +11,7 @@
 #include <boost/algorithm/string.hpp>
 #include <boost/filesystem.hpp>
 
-#include "version.h"
+#include "../gui/version.h"
 #include "../common/PlatformUtils.h"
 
 namespace fs=boost::filesystem;

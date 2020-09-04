@@ -16,7 +16,7 @@
 #define __IVisualProperties_INTERFACE_DEFINED__
 #include <shlobj.h>
 
-#include "version.h"
+#include "../gui/version.h"
 
 std::string PlatformUtils::pathSeparatorChar()
 {

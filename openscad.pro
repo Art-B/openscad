@@ -271,10 +271,10 @@ SOURCES += src/engine/AST.cc \
 FLEXSOURCES += src/engine/comment_lexer.l
 BISONSOURCES += src/engine/comment_parser.y
 
-HEADERS += src/version_check.h \
-           src/version_helper.h \
+HEADERS += src/gui/version_check.h \
+           src/common/version_helper.h \
            src/gui/ProgressWidget.h \
-           src/parsersettings.h \
+           src/engine/parsersettings.h \
            src/renderer/renderer.h \
            src/settings.h \
            src/renderer/rendersettings.h \
@@ -288,16 +288,16 @@ HEADERS += src/version_check.h \
            src/gui/tabwidget.h \
            src/OpenSCADApp.h \
            src/gui/WindowManager.h \
-           src/initConfig.h \
+           src/gui/initConfig.h \
            src/gui/Preferences.h \
-           src/SettingsWriter.h \
+           src/gui/SettingsWriter.h \
            src/gui/OpenCSGWarningDialog.h \
            src/gui/AboutDialog.h \
            src/gui/FontListDialog.h \
            src/gui/FontListTableView.h \
            src/engine/GroupModule.h \
            src/engine/FileModule.h \
-           src/StatCache.h \
+           src/engine/StatCache.h \
            src/scadapi.h \
            src/engine/builtin.h \
            src/engine/calc.h \
@@ -311,12 +311,12 @@ HEADERS += src/version_check.h \
            src/porters/dxfdata.h \
            src/porters/dxfdim.h \
            src/porters/export.h \
-           src/stackcheck.h \
+           src/engine/stackcheck.h \
            src/engine/exceptions.h \
            src/engine/grid.h \
-           src/hash.h \
+           src/engine/math/hash.h \
            src/engine/localscope.h \
-           src/feature.h \
+           src/engine/feature.h \
            src/engine/node.h \
            src/engine/csgnode.h \
            src/engine/offsetnode.h \
@@ -330,9 +330,9 @@ HEADERS += src/version_check.h \
            src/engine/colornode.h \
            src/engine/rendernode.h \
            src/engine/textnode.h \
-           src/version.h \
+           src/gui/version.h \
            src/openscad.h \
-           src/handle_dep.h \
+           src/engine/handle_dep.h \
            src/engine/math/Geometry.h \
            src/engine/math/Polygon2d.h \
            src/engine/clipper-utils.h \
@@ -342,10 +342,10 @@ HEADERS += src/version_check.h \
            src/common/printutils.h \
            src/common/fileutils.h \
            src/engine/value.h \
-           src/progress.h \
+           src/engine/progress.h \
            src/gui/editor.h \
            src/engine/NodeVisitor.h \
-           src/state.h \
+           src/engine/math/state.h \
            src/engine/nodecache.h \
            src/engine/nodedumper.h \
            src/engine/ModuleCache.h \
@@ -368,7 +368,7 @@ HEADERS += src/version_check.h \
            src/renderer/OffscreenView.h \
            src/renderer/OffscreenContext.h \
            src/renderer/OffscreenContextAll.hpp \
-           src/fbo.h \
+           src/renderer/fbo.h \
            src/renderer/imageutils.h \
            src/renderer/system-gl.h \
            src/engine/CsgInfo.h \
@@ -422,18 +422,18 @@ SOURCES += \
            src/libsvg/transformation.cc \
            src/libsvg/util.cc \
            \
-           src/version_check.cc
+           src/gui/version_check.cc
 
 SOURCES += \
            src/gui/ProgressWidget.cc \
            src/engine/math/linalg.cc \
            src/renderer/Camera.cc \
-           src/handle_dep.cc \
+           src/engine/handle_dep.cc \
            src/engine/value.cc \
            src/engine/math/degree_trig.cc \
            src/engine/func.cc \
            src/engine/localscope.cc \
-           src/feature.cc \
+           src/engine/feature.cc \
            src/engine/node.cc \
            src/engine/context.cc \
            src/engine/builtincontext.cc \
@@ -465,8 +465,8 @@ SOURCES += \
            src/engine/rotateextrude.cc \
            src/common/printutils.cc \
            src/common/fileutils.cc \
-           src/progress.cc \
-           src/parsersettings.cc \
+           src/engine/progress.cc \
+           src/engine/parsersettings.cc \
            src/common/boost-utils.cc \
            src/common/PlatformUtils.cc \
            src/gui/LibraryInfo.cc \
@@ -484,19 +484,19 @@ SOURCES += \
            \
            src/settings.cc \
            src/renderer/rendersettings.cc \
-           src/initConfig.cc \
+           src/gui/initConfig.cc \
            src/gui/Preferences.cc \
-           src/SettingsWriter.cc \
+           src/gui/SettingsWriter.cc \
            src/gui/OpenCSGWarningDialog.cc \
            src/gui/editor.cc \
            src/gui/GLView.cc \
            src/gui/QGLView.cc \
            src/gui/AutoUpdater.cc \
            \
-           src/hash.cc \
+           src/engine/math/hash.cc \
            src/engine/GroupModule.cc \
            src/engine/FileModule.cc \
-           src/StatCache.cc \
+           src/engine/StatCache.cc \
            src/scadapi.cc \
            src/engine/builtin.cc \
            src/engine/calc.cc \
@@ -520,11 +520,11 @@ SOURCES += \
            src/renderer/ThrownTogetherRenderer.cc \
            src/engine/svg.cc \
            src/renderer/OffscreenView.cc \
-           src/fbo.cc \
+           src/renderer/fbo.cc \
            src/renderer/system-gl.cc \
            src/renderer/imageutils.cc \
            \
-           src/version.cc \
+           src/gui/version.cc \
            src/openscad.cc \
            src/gui/mainwin.cc \
            src/gui/tabmanager.cc \

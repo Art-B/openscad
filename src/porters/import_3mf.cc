@@ -29,7 +29,7 @@
 #include "../engine/math/polyset.h"
 #include "../engine/math/Geometry.h"
 #include "../common/printutils.h"
-#include "version_helper.h"
+#include "../common/version_helper.h"
 #include "../engine/AST.h"
 #include "../common/boost-utils.h"
 

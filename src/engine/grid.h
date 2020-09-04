@@ -1,7 +1,7 @@
 #pragma once
 
 #include "math/linalg.h"
-#include "hash.h"
+#include "math/hash.h"
 #include <boost/functional/hash.hpp>
 #include <cmath>
 

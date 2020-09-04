@@ -5,7 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-#include "version.h"
+#include "../gui/version.h"
 
 std::string PlatformUtils::pathSeparatorChar()
 {

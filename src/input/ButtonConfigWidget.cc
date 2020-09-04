@@ -29,7 +29,7 @@
 #include "settings.h"
 #include "gui/QSettingsCached.h"
 #include "input/InputDriverManager.h"
-#include "SettingsWriter.h"
+#include "../gui/SettingsWriter.h"
 #include "WheelIgnorer.h"
 
 ButtonConfigWidget::ButtonConfigWidget(QWidget *parent) : QWidget(parent)

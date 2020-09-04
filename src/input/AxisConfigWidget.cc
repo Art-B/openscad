@@ -30,9 +30,9 @@
 #include "settings.h"
 #include "gui/QSettingsCached.h"
 #include "input/InputDriverManager.h"
-#include "SettingsWriter.h"
+#include "../gui/SettingsWriter.h"
 #include "WheelIgnorer.h"
-#include "initConfig.h"
+#include "../gui/initConfig.h"
 
 
 AxisConfigWidget::AxisConfigWidget(QWidget *parent) : QWidget(parent)

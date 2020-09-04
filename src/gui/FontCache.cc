@@ -31,7 +31,7 @@
 
 #include "FontCache.h"
 #include "../common/PlatformUtils.h"
-#include "parsersettings.h"
+#include "../engine/parsersettings.h"
 #include "../common/printutils.h"
 
 extern std::vector<std::string> librarypath;

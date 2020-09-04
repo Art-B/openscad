@@ -34,7 +34,7 @@
 #include <boost/algorithm/string.hpp>
 #include "../engine/GeometryCache.h"
 #include "AutoUpdater.h"
-#include "feature.h"
+#include "../engine/feature.h"
 #ifdef ENABLE_CGAL
 #include "../engine/CGALCache.h"
 #endif

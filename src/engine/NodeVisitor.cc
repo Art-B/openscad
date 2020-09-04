@@ -1,5 +1,5 @@
 #include "NodeVisitor.h"
-#include "state.h"
+#include "math/state.h"
 
 State NodeVisitor::nullstate(nullptr);
 

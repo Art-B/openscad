@@ -27,7 +27,7 @@
 
 #include "svg.h"
 #include "Reindexer.h"
-#include "../hash.h"
+#include "math/hash.h"
 #include "math/GeometryUtils.h"
 
 #include <map>

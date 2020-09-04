@@ -7,7 +7,7 @@
 #include <boost/range/adaptor/transformed.hpp>
 
 #include "feature.h"
-#include "common/printutils.h"
+#include "../common/printutils.h"
 
 /**
  * Feature registration map/list for later lookup. This must be initialized

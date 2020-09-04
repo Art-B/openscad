@@ -3,7 +3,7 @@
 #include "../gui/qtgettext.h"
 #include "settings.h"
 #include "ui_AxisConfigWidget.h"
-#include "initConfig.h"
+#include "../gui/initConfig.h"
 
 class AxisConfigWidget : public QWidget, public Ui::Axis,public InitConfigurator
 {

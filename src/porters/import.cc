@@ -39,8 +39,8 @@
 #include "dxfdata.h"
 #include "../common/printutils.h"
 #include "../common/fileutils.h"
-#include "feature.h"
-#include "handle_dep.h"
+#include "../engine/feature.h"
+#include "../engine/handle_dep.h"
 #include "../common/boost-utils.h"
 #include <sys/types.h>
 #include <sstream>

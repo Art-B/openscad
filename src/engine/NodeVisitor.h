@@ -2,7 +2,7 @@
 
 #include "BaseVisitable.h"
 #include "node.h"
-#include "state.h"
+#include "math/state.h"
 
 class NodeVisitor :
 	public BaseVisitor,

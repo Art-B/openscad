@@ -42,7 +42,7 @@
 #include <hb.h>
 #include <hb-ft.h>
 
-#include "version_helper.h"
+#include "../common/version_helper.h"
 
 class FontInfo {
 public:
