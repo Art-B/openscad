@@ -7,7 +7,7 @@
 #include <unordered_map>
 #include "value.h"
 #include "Assignment.h"
-#include "memory.h"
+#include "../common/memory.h"
 
 /**
  * Local handle to a all context objects. This is used to maintain the

@@ -39,8 +39,8 @@
 
 #include "value.h"
 #include "expression.h"
-#include "printutils.h"
-#include "boost-utils.h"
+#include "../common/printutils.h"
+#include "../common/boost-utils.h"
 #include "double-conversion/double-conversion.h"
 #include "double-conversion/utils.h"
 #include "double-conversion/ieee.h"

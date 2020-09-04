@@ -7,10 +7,10 @@
 #include <locale.h>
 
 #include "math/GeometryUtils.h"
-#include "Reindexer.h"
+#include "common/Reindexer.h"
 #include "math/linalg.h"
-#include "../engine/grid.h"
-#include "printutils.h"
+#include "engine/grid.h"
+#include "common/printutils.h"
 
 static void export_stl(const IndexedTriangleMesh &trimesh, std::ostream &output)
 {

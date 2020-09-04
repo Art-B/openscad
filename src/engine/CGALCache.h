@@ -1,7 +1,7 @@
 #pragma once
 
 #include "cache.h"
-#include "memory.h"
+#include "../common/memory.h"
 
 /*!
 */

@@ -26,11 +26,11 @@
 
 #include "csgops.h"
 
-#include "engine/evalcontext.h"
-#include "engine/module.h"
-#include "engine/ModuleInstantiation.h"
+#include "evalcontext.h"
+#include "module.h"
+#include "ModuleInstantiation.h"
 #include "csgnode.h"
-#include "engine/builtin.h"
+#include "builtin.h"
 #include <sstream>
 #include <assert.h>
 

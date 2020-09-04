@@ -26,11 +26,11 @@
 
 #include "../engine/importnode.h"
 
-#include "engine/math/polyset.h"
-#include "engine/math/Geometry.h"
-#include "printutils.h"
+#include "../engine/math/polyset.h"
+#include "../engine/math/Geometry.h"
+#include "../common/printutils.h"
 #include "version_helper.h"
-#include "engine/AST.h"
+#include "../engine/AST.h"
 #include "boost-utils.h"
 
 #ifdef ENABLE_LIB3MF

@@ -24,7 +24,7 @@
  *
  */
 #include <iostream>
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 #include "../engine/comment.h"
 #include "openscad.h"
 #include "../engine/GeometryCache.h"
@@ -34,11 +34,11 @@
 #include "parsersettings.h"
 #include "../renderer/rendersettings.h"
 #include "Preferences.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "../engine/node.h"
 #include "../engine/csgnode.h"
 #include "../engine/builtin.h"
-#include "memory.h"
+#include "../common/memory.h"
 #include "../engine/expression.h"
 #include "../engine/modcontext.h"
 #include "progress.h"
@@ -62,7 +62,7 @@
 #ifdef Q_OS_MAC
 #include "osx/CocoaUtils.h"
 #endif
-#include "PlatformUtils.h"
+#include "../common/PlatformUtils.h"
 #ifdef OPENSCAD_UPDATER
 #include "gui/AutoUpdater.h"
 #endif

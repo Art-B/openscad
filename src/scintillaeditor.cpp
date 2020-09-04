@@ -12,7 +12,7 @@
 
 #include "scintillaeditor.h"
 #include "gui/Preferences.h"
-#include "PlatformUtils.h"
+#include "common/PlatformUtils.h"
 #include "settings.h"
 #include "gui/QSettingsCached.h"
 #include <QWheelEvent>

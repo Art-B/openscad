@@ -25,9 +25,9 @@
  */
 
 #include "csgnode.h"
-#include "engine/math/Geometry.h"
-#include "engine/math/linalg.h"
-#include "printutils.h"
+#include "math/Geometry.h"
+#include "math/linalg.h"
+#include "../common/printutils.h"
 
 #include <sstream>
 #include <stack>

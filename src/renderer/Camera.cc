@@ -1,6 +1,6 @@
 #include "Camera.h"
 #include "rendersettings.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "engine/math/degree_trig.h"
 
 static const double DEFAULT_DISTANCE = 140.0;

@@ -25,7 +25,7 @@
  */
 #include "InputDriverManager.h"
 
-#include "printutils.h"
+#include "../common/printutils.h"
 
 InputDriverManager * InputDriverManager::self = 0;
 

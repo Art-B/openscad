@@ -29,7 +29,7 @@
 #include <QTextStream>
 
 #include "Console.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 
 
 #include <boost/algorithm/string/classification.hpp> // Include boost::for is_any_of

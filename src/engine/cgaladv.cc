@@ -25,11 +25,11 @@
  */
 
 #include "cgaladvnode.h"
-#include "engine/module.h"
-#include "engine/ModuleInstantiation.h"
-#include "engine/evalcontext.h"
-#include "engine/builtin.h"
-#include "engine/math/polyset.h"
+#include "module.h"
+#include "ModuleInstantiation.h"
+#include "evalcontext.h"
+#include "builtin.h"
+#include "math/polyset.h"
 #include <sstream>
 #include <assert.h>
 #include <boost/assign/std/vector.hpp>

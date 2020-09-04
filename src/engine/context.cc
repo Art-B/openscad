@@ -32,7 +32,7 @@
 #include "UserModule.h"
 #include "ModuleInstantiation.h"
 #include "builtin.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include <boost/filesystem.hpp>
 #include "boost-utils.h"
 namespace fs = boost::filesystem;

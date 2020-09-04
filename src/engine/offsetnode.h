@@ -1,7 +1,7 @@
 #pragma once
 
 #include "node.h"
-#include "engine/value.h"
+#include "value.h"
 #include "clipper-utils.h"
 
 class OffsetNode : public AbstractPolyNode

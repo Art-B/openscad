@@ -10,7 +10,7 @@
 #include <boost/algorithm/string.hpp>
 #include <boost/format.hpp>
 
-#include "printutils.h"
+#include "../common/printutils.h"
 
 double gl_version()
 {

@@ -4,7 +4,7 @@
 #include "../engine/math/polyset.h"
 #include "../engine/math/Polygon2d.h"
 #include "colormap.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 
 #include "../engine/math/polyset-utils.h"
 #include "../engine/grid.h"

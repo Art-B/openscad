@@ -1,10 +1,10 @@
 #pragma once
 
-#include "engine/math/Geometry.h"
-#include "engine/cgal.h"
-#include "memory.h"
+#include "math/Geometry.h"
+#include "cgal.h"
+#include "../common/memory.h"
 #include <string>
-#include "engine/math/linalg.h"
+#include "math/linalg.h"
 
 class CGAL_Nef_polyhedron : public Geometry
 {

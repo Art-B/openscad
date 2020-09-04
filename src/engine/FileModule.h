@@ -8,7 +8,7 @@
 #include "module.h"
 #include "value.h"
 #include "localscope.h"
-#include "indicatordata.h"
+#include "../common/indicatordata.h"
 
 class FileModule : public AbstractModule, public ASTNode
 {

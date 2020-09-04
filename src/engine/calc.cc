@@ -29,8 +29,8 @@
 #include <cassert>
 #include <algorithm>
 #include "calc.h"
-#include "engine/grid.h"
-#include "engine/math/degree_trig.h"
+#include "grid.h"
+#include "math/degree_trig.h"
 
 /*!
 	Returns the number of subdivision of a whole circle, given radius and

@@ -13,7 +13,7 @@
 #endif
 
 #include <QString>
-#include "printutils.h"
+#include "../common/printutils.h"
 
 inline QString q_(const char *msgid, const char *msgctxt)
 {

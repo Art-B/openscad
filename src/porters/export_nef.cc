@@ -25,7 +25,7 @@
  */
 
 #include "export.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "../engine/math/Geometry.h"
 
 #ifdef ENABLE_CGAL

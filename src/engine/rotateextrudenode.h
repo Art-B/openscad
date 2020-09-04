@@ -1,7 +1,7 @@
 #pragma once
 
 #include "node.h"
-#include "engine/value.h"
+#include "value.h"
 
 class RotateExtrudeNode : public AbstractPolyNode
 {

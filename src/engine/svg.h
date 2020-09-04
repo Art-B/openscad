@@ -1,6 +1,6 @@
 #pragma once
 
-#include "engine/cgal.h"
+#include "cgal.h"
 #include <boost/algorithm/string.hpp>
 #include <map>
 

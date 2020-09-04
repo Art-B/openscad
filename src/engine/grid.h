@@ -1,6 +1,6 @@
 #pragma once
 
-#include "engine/math/linalg.h"
+#include "math/linalg.h"
 #include "hash.h"
 #include <boost/functional/hash.hpp>
 #include <cmath>

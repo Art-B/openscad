@@ -1,9 +1,9 @@
 #include "polyset-utils.h"
 #include "polyset.h"
 #include "Polygon2d.h"
-#include "../../printutils.h"
+#include "../../common/printutils.h"
 #include "GeometryUtils.h"
-#include "../../Reindexer.h"
+#include "../Reindexer.h"
 #include "../grid.h"
 #ifdef ENABLE_CGAL
 #include "../cgalutils.h"

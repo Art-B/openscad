@@ -27,8 +27,8 @@
 #include "../engine/importnode.h"
 
 #include "../engine/math/polyset.h"
-#include "printutils.h"
-#include "engine/AST.h"
+#include "../common/printutils.h"
+#include "../engine/AST.h"
 
 #ifdef ENABLE_CGAL
 #include "../engine/cgalutils.h"

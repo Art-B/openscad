@@ -1,7 +1,7 @@
 #include "nodedumper.h"
 #include "state.h"
-#include "engine/module.h"
-#include "engine/ModuleInstantiation.h"
+#include "module.h"
+#include "ModuleInstantiation.h"
 #include <string>
 #include <sstream>
 #include <boost/regex.hpp>

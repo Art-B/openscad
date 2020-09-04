@@ -27,7 +27,7 @@
 #include "FileModule.h"
 #include "ModuleCache.h"
 #include "node.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "exceptions.h"
 #include "modcontext.h"
 #include "parsersettings.h"
@@ -35,7 +35,7 @@
 #include "evalcontext.h"
 #include <boost/algorithm/string.hpp>
 #include <boost/filesystem.hpp>
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 namespace fs = boost::filesystem;
 #include "../gui/FontCache.h"
 #include <sys/stat.h>

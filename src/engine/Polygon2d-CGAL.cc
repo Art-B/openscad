@@ -1,6 +1,6 @@
 #include "Polygon2d-CGAL.h"
-#include "engine/math/polyset.h"
-#include "printutils.h"
+#include "math/polyset.h"
+#include "../common/printutils.h"
 #include "boost-utils.h"
 #pragma push_macro("NDEBUG")
 #undef NDEBUG

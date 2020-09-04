@@ -54,7 +54,7 @@ namespace fs = boost::filesystem;
 
 #include <boost/program_options.hpp>
 namespace po = boost::program_options;
-#include "PlatformUtils.h"
+#include "../common/PlatformUtils.h"
 
 std::string commandline_commands;
 std::string currentdir;

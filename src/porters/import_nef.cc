@@ -1,6 +1,6 @@
 #include "import.h"
-#include "printutils.h"
-#include "engine/AST.h"
+#include "../common/printutils.h"
+#include "../engine/AST.h"
 #include "boost-utils.h"
 
 #ifdef ENABLE_CGAL

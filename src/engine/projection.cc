@@ -25,12 +25,12 @@
  */
 
 #include "projectionnode.h"
-#include "engine/module.h"
-#include "engine/ModuleInstantiation.h"
-#include "engine/evalcontext.h"
-#include "printutils.h"
-#include "engine/builtin.h"
-#include "engine/math/polyset.h"
+#include "module.h"
+#include "ModuleInstantiation.h"
+#include "evalcontext.h"
+#include "../common/printutils.h"
+#include "builtin.h"
+#include "math/polyset.h"
 
 #include <assert.h>
 #include <boost/assign/std/vector.hpp>

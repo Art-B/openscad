@@ -1,11 +1,11 @@
 #include "cgalworker.h"
 #include <QThread>
 
-#include "engine/Tree.h"
-#include "engine/GeometryEvaluator.h"
+#include "Tree.h"
+#include "GeometryEvaluator.h"
 #include "progress.h"
-#include "printutils.h"
-#include "engine/exceptions.h"
+#include "../common/printutils.h"
+#include "exceptions.h"
 
 CGALWorker::CGALWorker()
 {

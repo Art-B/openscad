@@ -25,14 +25,14 @@
  */
 
 #include "calc.h"
-#include "engine/module.h"
-#include "engine/evalcontext.h"
-#include "printutils.h"
-#include "engine/builtin.h"
+#include "module.h"
+#include "evalcontext.h"
+#include "../common/printutils.h"
+#include "builtin.h"
 
 #include "textnode.h"
-#include "gui/FreetypeRenderer.h"
-#include "engine/math/Polygon2d.h"
+#include "../gui/FreetypeRenderer.h"
+#include "math/Polygon2d.h"
 
 #include <boost/assign/std/vector.hpp>
 using namespace boost::assign; // bring 'operator+=()' into scope

@@ -1,6 +1,6 @@
 #include "Tree.h"
 #include "nodedumper.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 
 #include <assert.h>
 #include <algorithm>

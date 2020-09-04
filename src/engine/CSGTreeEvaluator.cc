@@ -1,17 +1,17 @@
 #include "CSGTreeEvaluator.h"
 #include "state.h"
 #include "csgops.h"
-#include "engine/module.h"
-#include "engine/ModuleInstantiation.h"
+#include "module.h"
+#include "ModuleInstantiation.h"
 #include "csgnode.h"
 #include "transformnode.h"
 #include "colornode.h"
 #include "rendernode.h"
 #include "cgaladvnode.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "GeometryEvaluator.h"
-#include "engine/math/polyset.h"
-#include "engine/math/polyset-utils.h"
+#include "math/polyset.h"
+#include "math/polyset-utils.h"
 
 #include <string>
 #include <map>

@@ -1,5 +1,5 @@
-#include "PlatformUtils.h"
-#include "printutils.h"
+#include "../common/PlatformUtils.h"
+#include "../common/printutils.h"
 #include "findversion.h"
 #ifndef _WIN32_WINNT
 #define _WIN32_WINNT 0x0501

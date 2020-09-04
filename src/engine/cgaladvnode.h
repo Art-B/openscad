@@ -1,8 +1,8 @@
 #pragma once
 
 #include "node.h"
-#include "engine/value.h"
-#include "engine/math/linalg.h"
+#include "value.h"
+#include "math/linalg.h"
 
 enum class CgaladvType {
 	MINKOWSKI,

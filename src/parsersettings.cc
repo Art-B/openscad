@@ -1,7 +1,7 @@
 #include "parsersettings.h"
 #include <boost/filesystem.hpp>
 #include <boost/algorithm/string.hpp>
-#include "PlatformUtils.h"
+#include "common/PlatformUtils.h"
 
 namespace fs = boost::filesystem;
 
@@ -13,7 +13,7 @@ static void add_librarydir(const std::string &libdir)
 }
 
 /*!
-	Searces for the given file in library paths and returns the full path if found.
+	Searches for the given file in library paths and returns the full path if found.
 	Returns an empty path if file cannot be found or filename is a directory.
 */
 fs::path search_libs(const fs::path &localpath)

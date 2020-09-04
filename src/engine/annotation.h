@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 #include <unordered_map>
-#include "memory.h"
+#include "../common/memory.h"
 
 class Annotation
 {

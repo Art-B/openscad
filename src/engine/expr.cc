@@ -34,11 +34,11 @@
 #include <algorithm>
 #include <typeinfo>
 #include <forward_list>
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "stackcheck.h"
 #include "exceptions.h"
 #include "feature.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include <boost/bind.hpp>
 #include "boost-utils.h"
 #include <boost/assign/std/vector.hpp>

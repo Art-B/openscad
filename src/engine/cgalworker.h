@@ -1,7 +1,7 @@
 #pragma once
 
 #include <QObject>
-#include "memory.h"
+#include "../common/memory.h"
 
 class CGALWorker : public QObject
 {

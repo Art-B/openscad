@@ -24,12 +24,12 @@
  *
  */
 
-#include "engine/evalcontext.h"
+#include "evalcontext.h"
 #include "node.h"
-#include "engine/module.h"
-#include "engine/ModuleInstantiation.h"
+#include "module.h"
+#include "ModuleInstantiation.h"
 #include "progress.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include <functional>
 #include <iostream>
 #include <algorithm>

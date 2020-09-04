@@ -405,7 +405,7 @@ endif()
 
 set(CORE_SOURCES
   src/engine/annotation.cc
-  src/boost-utils.cc
+  src/common/boost-utils.cc
   src/engine/builtin.cc
   src/engine/builtincontext.cc
   src/engine/calc.cc
@@ -455,15 +455,15 @@ set(CORE_SOURCES
   src/engine/math/polyset.cc
   src/engine/math/polyset-utils.cc
   src/engine/primitives.cc
-  src/printutils.cc
+  src/common/printutils.cc
   src/progress.cc
   src/engine/projection.cc
   src/renderer/render.cc
   src/renderer/rendersettings.cc
   src/engine/rotateextrude.cc
   src/stackcheck.h
-  src/surface.cc
-  src/svg.cc
+  src/engine/surface.cc
+  src/engine/svg.cc
   src/libsvg/text.cc
   src/engine/transform.cc
   src/engine/value.cc
@@ -480,11 +480,11 @@ set(CORE_SOURCES
   src/engine/GeometryCache.cc
   src/engine/math/GeometryUtils.cc
   src/engine/GroupModule.cc
-  src/LibraryInfo.cc
+  src/gui/LibraryInfo.cc
   src/engine/ModuleInstantiation.cc
   src/engine/ModuleCache.cc
   src/engine/NodeVisitor.cc
-  src/PlatformUtils.cc
+  src/common/PlatformUtils.cc
   src/engine/math/Polygon2d.cc
   src/engine/RenderStatistic.cc
   src/StatCache.cc
@@ -530,8 +530,8 @@ set(CGAL_SOURCES
   src/engine/cgalutils-tess.cc
   src/porters/export_nef.cc
   src/porters/import_nef.cc
-  src/CGAL_Nef_polyhedron.cc
-  src/CGALCache.cc
+  src/engine/CGAL_Nef_polyhedron.cc
+  src/engine/CGALCache.cc
   src/engine/CSGTreeEvaluator.cc
   src/engine/Polygon2d-CGAL.cc
   src/engine/GeometryEvaluator.cc)
@@ -577,7 +577,7 @@ set(INPUT_DRIVER_SOURCES
 
 set(GUI_SOURCES
   ${GUI_SOURCES}
-  src/cgalworker.cc
+  src/engine/cgalworker.cc
   src/gui/editor.cc
   src/initConfig.cc
   src/gui/launchingscreen.cc

@@ -48,7 +48,7 @@
 
 #include <boost/filesystem.hpp>
 namespace fs = boost::filesystem;
-#include "PlatformUtils.h"
+#include "../common/PlatformUtils.h"
 
 std::string commandline_commands;
 std::string currentdir;

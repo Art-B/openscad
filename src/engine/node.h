@@ -4,7 +4,7 @@
 #include <string>
 #include <deque>
 #include "BaseVisitable.h"
-#include "engine/AST.h"
+#include "AST.h"
 
 extern int progress_report_count;
 extern void *progress_report_vp;

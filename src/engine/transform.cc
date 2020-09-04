@@ -25,13 +25,13 @@
  */
 
 #include "transformnode.h"
-#include "engine/ModuleInstantiation.h"
-#include "engine/evalcontext.h"
-#include "engine/math/polyset.h"
-#include "engine/builtin.h"
-#include "engine/value.h"
-#include "printutils.h"
-#include "engine/math/degree_trig.h"
+#include "ModuleInstantiation.h"
+#include "evalcontext.h"
+#include "math/polyset.h"
+#include "builtin.h"
+#include "value.h"
+#include "../common/printutils.h"
+#include "math/degree_trig.h"
 #include <sstream>
 #include <vector>
 #include <assert.h>

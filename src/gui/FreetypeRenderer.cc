@@ -32,7 +32,7 @@
 
 #include <fontconfig/fontconfig.h>
 
-#include "printutils.h"
+#include "../common/printutils.h"
 
 #include "FontCache.h"
 #include "DrawingCallback.h"

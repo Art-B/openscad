@@ -3,7 +3,7 @@
 #include "stdio.h"
 #include "colormap.h"
 #include "../renderer/rendersettings.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "../renderer/renderer.h"
 #include "../engine/math/degree_trig.h"
 #include <cmath>

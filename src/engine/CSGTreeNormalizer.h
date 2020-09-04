@@ -1,6 +1,6 @@
 #pragma once
 
-#include "memory.h"
+#include "../common/memory.h"
 
 class CSGTreeNormalizer
 {

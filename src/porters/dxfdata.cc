@@ -29,8 +29,8 @@
 
 #include "dxfdata.h"
 #include "../engine/grid.h"
-#include "printutils.h"
-#include "engine/calc.h"
+#include "../common/printutils.h"
+#include "../engine/calc.h"
 
 #include <fstream>
 #include <assert.h>
@@ -43,9 +43,9 @@
 #include <map>
 
 #include "engine/value.h"
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 #include "engine/math/Polygon2d.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "engine/math/degree_trig.h"
 
 

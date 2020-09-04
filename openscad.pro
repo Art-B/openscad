@@ -339,8 +339,8 @@ HEADERS += src/version_check.h \
            src/engine/math/GeometryUtils.h \
            src/engine/math/polyset-utils.h \
            src/engine/math/polyset.h \
-           src/printutils.h \
-           src/fileutils.h \
+           src/common/printutils.h \
+           src/common/fileutils.h \
            src/engine/value.h \
            src/progress.h \
            src/gui/editor.h \
@@ -355,14 +355,14 @@ HEADERS += src/version_check.h \
            src/gui/DrawingCallback.h \
            src/gui/FreetypeRenderer.h \
            src/gui/FontCache.h \
-           src/memory.h \
+           src/common/memory.h \
            src/engine/math/linalg.h \
            src/renderer/Camera.h \
            src/renderer/system-gl.h \
-           src/boost-utils.h \
+           src/common/boost-utils.h \
            src/gui/LibraryInfo.h \
            src/engine/RenderStatistic.h \
-           src/svg.h \
+           src/engine/svg.h \
            src/gui/mouseselector.h \
            \
            src/renderer/OffscreenView.h \
@@ -454,7 +454,7 @@ SOURCES += \
            src/engine/primitives.cc \
            src/engine/projection.cc \
            src/engine/cgaladv.cc \
-           src/surface.cc \
+           src/engine/surface.cc \
            src/engine/control.cc \
            src/renderer/render.cc \
            src/engine/text.cc \
@@ -463,12 +463,12 @@ SOURCES += \
            src/engine/offset.cc \
            src/engine/linearextrude.cc \
            src/engine/rotateextrude.cc \
-           src/printutils.cc \
-           src/fileutils.cc \
+           src/common/printutils.cc \
+           src/common/fileutils.cc \
            src/progress.cc \
            src/parsersettings.cc \
-           src/boost-utils.cc \
-           src/PlatformUtils.cc \
+           src/common/boost-utils.cc \
+           src/common/PlatformUtils.cc \
            src/gui/LibraryInfo.cc \
            src/engine/RenderStatistic.cc \
            \
@@ -518,7 +518,7 @@ SOURCES += \
            src/renderer/renderer.cc \
            src/colormap.cc \
            src/renderer/ThrownTogetherRenderer.cc \
-           src/svg.cc \
+           src/engine/svg.cc \
            src/renderer/OffscreenView.cc \
            src/fbo.cc \
            src/renderer/system-gl.cc \
@@ -648,7 +648,7 @@ opencsg {
 cgal {
 HEADERS += src/engine/cgal.h \
            src/engine/cgalutils.h \
-           src/Reindexer.h \
+           src/engine/Reindexer.h \
            src/engine/CGALCache.h \
            src/renderer/CGALRenderer.h \
            src/engine/CGAL_Nef_polyhedron.h \

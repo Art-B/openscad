@@ -23,7 +23,7 @@
  *
  */
 
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "GeometryCache.h"
 #include "CGALCache.h"
 #include "math/polyset.h"

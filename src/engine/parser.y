@@ -43,12 +43,12 @@
 #include "engine/expression.h"
 #include "engine/value.h"
 #include "engine/function.h"
-#include "printutils.h"
-#include "memory.h"
+#include "common/printutils.h"
+#include "common/memory.h"
 #include <sstream>
 #include <stack>
 #include <boost/filesystem.hpp>
-#include "boost-utils.h"
+#include "common/boost-utils.h"
 #include "feature.h"
 
 namespace fs = boost::filesystem;

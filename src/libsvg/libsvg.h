@@ -28,7 +28,7 @@
 #include "rect.h"
 #include "path.h"
 #include "svgpage.h"
-#include "memory.h"
+#include "../common/memory.h"
 
 namespace libsvg {
 

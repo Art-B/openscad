@@ -8,7 +8,7 @@
 
 #include "../engine/Tree.h"
 #include "../renderer/Camera.h"
-#include "memory.h"
+#include "../common/memory.h"
 
 class PolySet;
 

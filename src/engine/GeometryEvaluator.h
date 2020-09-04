@@ -2,8 +2,8 @@
 
 #include "NodeVisitor.h"
 #include "enums.h"
-#include "memory.h"
-#include "engine/math/Geometry.h"
+#include "../common/memory.h"
+#include "math/Geometry.h"
 
 #include <utility>
 #include <list>

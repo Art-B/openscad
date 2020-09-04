@@ -26,14 +26,14 @@
 
 #include "offsetnode.h"
 
-#include "engine/module.h"
-#include "engine/ModuleInstantiation.h"
-#include "engine/evalcontext.h"
-#include "printutils.h"
-#include "fileutils.h"
-#include "engine/builtin.h"
+#include "module.h"
+#include "ModuleInstantiation.h"
+#include "evalcontext.h"
+#include "../common/printutils.h"
+#include "../common/fileutils.h"
+#include "builtin.h"
 #include "calc.h"
-#include "engine/math/polyset.h"
+#include "math/polyset.h"
 
 #include <sstream>
 #include <boost/assign/std/vector.hpp>

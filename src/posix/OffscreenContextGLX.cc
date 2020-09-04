@@ -36,7 +36,7 @@ OffscreenContext.mm (Mac OSX version)
  */
 
 #include "../renderer/OffscreenContext.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "../renderer/imageutils.h"
 #include "../renderer/system-gl.h"
 #include "fbo.h"

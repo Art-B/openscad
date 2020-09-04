@@ -1,8 +1,8 @@
 #pragma once
 
 #include "cache.h"
-#include "memory.h"
-#include "engine/math/Geometry.h"
+#include "../common/memory.h"
+#include "math/Geometry.h"
 
 class GeometryCache
 {

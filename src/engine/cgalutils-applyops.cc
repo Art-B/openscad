@@ -5,7 +5,7 @@
 
 #include "cgalutils.h"
 #include "math/polyset.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "progress.h"
 #include "math/Polygon2d.h"
 #include "math/polyset-utils.h"
@@ -25,10 +25,10 @@
 #include <CGAL/convex_hull_3.h>
 #pragma pop_macro("NDEBUG")
 
-#include "memory.h"
+#include "../common/memory.h"
 #include "svg.h"
 #include "Reindexer.h"
-#include "engine/math/GeometryUtils.h"
+#include "math/GeometryUtils.h"
 
 #include <map>
 #include <queue>

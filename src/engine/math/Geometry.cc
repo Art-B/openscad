@@ -1,5 +1,5 @@
 #include "Geometry.h"
-#include "../../printutils.h"
+#include "../../common/printutils.h"
 #include <boost/foreach.hpp>
 
 GeometryList::GeometryList()

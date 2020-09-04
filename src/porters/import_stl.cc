@@ -1,7 +1,7 @@
 #include "import.h"
 #include "../engine/math/polyset.h"
-#include "printutils.h"
-#include "engine/AST.h"
+#include "../common/printutils.h"
+#include "../engine/AST.h"
 #include "boost-utils.h"
 
 #include <fstream>

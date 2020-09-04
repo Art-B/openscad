@@ -2,7 +2,7 @@
 
 #include "cgalutils.h"
 #include "math/polyset.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "math/polyset-utils.h"
 #include "grid.h"
 

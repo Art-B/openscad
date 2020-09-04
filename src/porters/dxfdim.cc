@@ -25,15 +25,15 @@
  */
 
 #include "dxfdim.h"
-#include "engine/value.h"
-#include "engine/function.h"
+#include "../engine/value.h"
+#include "../engine/function.h"
 #include "dxfdata.h"
-#include "engine/builtin.h"
-#include "printutils.h"
-#include "fileutils.h"
-#include "engine/evalcontext.h"
+#include "../engine/builtin.h"
+#include "../common/printutils.h"
+#include "../common/fileutils.h"
+#include "../engine/evalcontext.h"
 #include "handle_dep.h"
-#include "engine/math/degree_trig.h"
+#include "../engine/math/degree_trig.h"
 
 #include <cmath>
 #include <sstream>

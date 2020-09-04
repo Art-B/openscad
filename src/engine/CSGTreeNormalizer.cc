@@ -2,7 +2,7 @@
 
 #include "CSGTreeNormalizer.h"
 #include "csgnode.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 
 // Helper function to debug normalization bugs
 #if 0

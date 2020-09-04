@@ -29,10 +29,10 @@
 
 #include "import.h"
 #include "../engine/math/Polygon2d.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "libsvg/libsvg.h"
 #include "../engine/clipper-utils.h"
-#include "engine/AST.h"
+#include "../engine/AST.h"
 #include "boost-utils.h"
 
 namespace {

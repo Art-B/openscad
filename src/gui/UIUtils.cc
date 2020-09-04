@@ -33,7 +33,7 @@
 #include "version.h"
 #include "UIUtils.h"
 #include "qtgettext.h"
-#include "PlatformUtils.h"
+#include "../common/PlatformUtils.h"
 #include "QSettingsCached.h"
 #include "boost-utils.h"
 

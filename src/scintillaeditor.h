@@ -13,7 +13,7 @@
 #include <Qsci/qsciscintilla.h>
 
 #include "gui/editor.h"
-#include "memory.h"
+#include "common/memory.h"
 #include "scadapi.h"
 #include "scadlexer.h"
 #include "parsersettings.h"

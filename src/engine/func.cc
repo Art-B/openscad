@@ -28,10 +28,10 @@
 #include "expression.h"
 #include "evalcontext.h"
 #include "builtin.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "stackcheck.h"
 #include "exceptions.h"
-#include "memory.h"
+#include "../common/memory.h"
 #include "UserModule.h"
 #include "math/degree_trig.h"
 
@@ -42,7 +42,7 @@
 #include <algorithm>
 #include <random>
 
-#include"boost-utils.h"
+#include"../common/boost-utils.h"
 /*Unicode support for string lengths and array accesses*/
 #include <glib.h>
 // hash double

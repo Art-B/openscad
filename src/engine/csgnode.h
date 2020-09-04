@@ -2,7 +2,7 @@
 
 #include <string>
 #include <vector>
-#include "memory.h"
+#include "../common/memory.h"
 #include "engine/math/Geometry.h"
 #include "engine/math/linalg.h"
 #include "enums.h"

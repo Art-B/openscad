@@ -34,7 +34,7 @@
 #include "../engine/cgal.h"
 #include "../engine/cgalutils.h"
 
-#include "Reindexer.h"
+#include "../engine/Reindexer.h"
 #include "../engine/grid.h"
 
 struct IndexedMesh {

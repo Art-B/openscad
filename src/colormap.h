@@ -5,7 +5,7 @@
 #include <list>
 #include "engine/math/linalg.h"
 
-#include "memory.h"
+#include "common/memory.h"
 #include <boost/filesystem.hpp>
 #include <boost/property_tree/ptree.hpp>
 

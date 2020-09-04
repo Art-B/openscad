@@ -24,14 +24,14 @@
  *
  */
 
-#include "engine/module.h"
-#include "engine/ModuleInstantiation.h"
-#include "engine/node.h"
-#include "engine/math/polyset.h"
-#include "engine/evalcontext.h"
-#include "engine/builtin.h"
-#include "printutils.h"
-#include "fileutils.h"
+#include "module.h"
+#include "ModuleInstantiation.h"
+#include "node.h"
+#include "math/polyset.h"
+#include "evalcontext.h"
+#include "builtin.h"
+#include "../common/printutils.h"
+#include "../common/fileutils.h"
 #include "handle_dep.h"
 #include "ext/lodepng/lodepng.h"
 

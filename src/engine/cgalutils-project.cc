@@ -5,7 +5,7 @@
 
 #include "cgalutils.h"
 #include "math/polyset.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "math/Polygon2d.h"
 #include "math/polyset-utils.h"
 #include "grid.h"
@@ -25,7 +25,7 @@
 #pragma pop_macro("NDEBUG")
 
 #include "svg.h"
-#include "engine/math/GeometryUtils.h"
+#include "math/GeometryUtils.h"
 
 #include <map>
 #include <queue>

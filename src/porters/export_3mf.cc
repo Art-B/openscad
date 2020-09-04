@@ -27,7 +27,7 @@
 #include "export.h"
 #include "../engine/math/polyset.h"
 #include "../engine/math/polyset-utils.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 
 #ifdef ENABLE_LIB3MF
 #ifdef ENABLE_CGAL

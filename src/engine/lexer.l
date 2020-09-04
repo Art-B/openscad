@@ -30,7 +30,7 @@
 
 #include <glib.h>
 #include "handle_dep.h"
-#include "printutils.h"
+#include "common/printutils.h"
 #include "parsersettings.h"
 #include "engine/Assignment.h"
 #include "parser.hxx"

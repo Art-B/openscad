@@ -7,7 +7,7 @@
 #endif
 
 #include "version_check.h"
-#include "PlatformUtils.h"
+#include "../common/PlatformUtils.h"
 #include "openscad.h"
 #include "version.h"
 #include "feature.h"

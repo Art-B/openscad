@@ -4,13 +4,13 @@
 #ifdef ENABLE_CGAL
 
 #include "cgalutils.h"
-#include "engine/math/polyset.h"
-#include "printutils.h"
-#include "engine/math/Polygon2d.h"
-#include "engine/math/polyset-utils.h"
+#include "math/polyset.h"
+#include "../common/printutils.h"
+#include "math/Polygon2d.h"
+#include "math/polyset-utils.h"
 #include "grid.h"
 #include "node.h"
-#include "engine/math/degree_trig.h"
+#include "math/degree_trig.h"
 
 #include "cgal.h"
 #pragma push_macro("NDEBUG")
@@ -27,8 +27,8 @@
 
 #include "svg.h"
 #include "Reindexer.h"
-#include "hash.h"
-#include "engine/math/GeometryUtils.h"
+#include "../hash.h"
+#include "math/GeometryUtils.h"
 
 #include <map>
 #include <queue>

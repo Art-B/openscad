@@ -3,8 +3,8 @@
 #include <string>
 #include <unordered_map>
 #include <assert.h>
-#include "engine/node.h"
-#include "printutils.h"
+#include "node.h"
+#include "../common/printutils.h"
 
 /*!
 	Caches string values per node based on the node.index().

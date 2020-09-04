@@ -1,7 +1,7 @@
 #include "ModuleCache.h"
 #include "StatCache.h"
-#include "engine/FileModule.h"
-#include "printutils.h"
+#include "FileModule.h"
+#include "../common/printutils.h"
 #include "openscad.h"
 #include "boost-utils.h"
 #include <boost/format.hpp>

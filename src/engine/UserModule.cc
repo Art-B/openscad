@@ -32,7 +32,7 @@
 #include "stackcheck.h"
 #include "modcontext.h"
 #include "expression.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "compiler_specific.h"
 #include <sstream>
 #include "boost-utils.h"
