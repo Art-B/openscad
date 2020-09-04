@@ -15,7 +15,7 @@
 #include "gui/editor.h"
 #include "common/memory.h"
 #include "scadapi.h"
-#include "scadlexer.h"
+#include "engine/scadlexer.h"
 #include "engine/parsersettings.h"
 
 class EditorColorScheme

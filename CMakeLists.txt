@@ -431,12 +431,12 @@ set(CORE_SOURCES
   src/porters/export_stl.cc
   src/porters/export_svg.cc
   src/engine/expr.cc
-  src/feature.cc
-  src/fileutils.cc
+  src/engine/feature.cc
+  src/common/fileutils.cc
   src/engine/func.cc
   src/engine/function.cc
-  src/handle_dep.cc
-  src/hash.cc
+  src/engine/handle_dep.cc
+  src/engine/math/hash.cc
   src/porters/import.cc
   src/porters/import_3mf.cc
   src/porters/import_amf.cc
@@ -451,23 +451,23 @@ set(CORE_SOURCES
   src/engine/node.cc
   src/engine/nodedumper.cc
   src/engine/offset.cc
-  src/parsersettings.cc
+  src/engine/parsersettings.cc
   src/engine/math/polyset.cc
   src/engine/math/polyset-utils.cc
   src/engine/primitives.cc
   src/common/printutils.cc
-  src/progress.cc
+  src/engine/progress.cc
   src/engine/projection.cc
   src/renderer/render.cc
   src/renderer/rendersettings.cc
   src/engine/rotateextrude.cc
-  src/stackcheck.h
+  src/engine/stackcheck.h
   src/engine/surface.cc
   src/engine/svg.cc
   src/libsvg/text.cc
   src/engine/transform.cc
   src/engine/value.cc
-  src/version.cc
+  src/gui/version.cc
   src/engine/Assignment.cc
   src/engine/AST.cc
   src/renderer/Camera.cc
@@ -487,7 +487,7 @@ set(CORE_SOURCES
   src/common/PlatformUtils.cc
   src/engine/math/Polygon2d.cc
   src/engine/RenderStatistic.cc
-  src/StatCache.cc
+  src/engine/StatCache.cc
   src/engine/UserModule.cc
   src/engine/Tree.cc
   src/ext/lodepng/lodepng.cpp
@@ -553,7 +553,7 @@ if(NULLGL)
 else()
   set(OFFSCREEN_SOURCES
     src/porters/export_png.cc
-    src/fbo.cc
+    src/renderer/fbo.cc
     src/renderer/imageutils.cc
     src/renderer/render.cc
     src/renderer/renderer.cc
@@ -579,13 +579,13 @@ set(GUI_SOURCES
   ${GUI_SOURCES}
   src/engine/cgalworker.cc
   src/gui/editor.cc
-  src/initConfig.cc
+  src/gui/initConfig.cc
   src/gui/launchingscreen.cc
   src/gui/mainwin.cc
   src/gui/mouseselector.cc
   src/scadapi.cc
-  src/scadlexer.cpp
-  src/scintillaeditor.cpp
+  src/engine/scadlexer.cpp
+  src/gui/scintillaeditor.cpp
   src/settings.cc
   src/gui/tabmanager.cc
   src/gui/tabwidget.cc
@@ -607,7 +607,7 @@ set(GUI_SOURCES
   src/gui/QGLView.cc
   src/gui/QSettingsCached.cc
   src/gui/QWordSearchField.cc
-  src/SettingsWriter.cc
+  src/gui/SettingsWriter.cc
   src/gui/UIUtils.cc
   src/gui/WindowManager.cc
   src/parameter/groupwidget.cpp
