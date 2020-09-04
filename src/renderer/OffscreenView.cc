@@ -1,8 +1,8 @@
 #include "OffscreenView.h"
 #include "system-gl.h"
 #include <cmath>
-#include <stdio.h>
-#include <string.h>
+#include <cstdio>
+#include <cstring>
 #include <cstdlib>
 #include <sstream>
 #include "../common/printutils.h"

@@ -38,7 +38,7 @@
 
 #include <cmath>
 #include <sstream>
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 #include <boost/assign/std/vector.hpp>
 using namespace boost::assign; // bring 'operator+=()' into scope
 

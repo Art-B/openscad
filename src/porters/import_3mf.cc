@@ -31,7 +31,7 @@
 #include "../common/printutils.h"
 #include "version_helper.h"
 #include "../engine/AST.h"
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 
 #ifdef ENABLE_LIB3MF
 #include <Model/COM/NMR_DLLInterfaces.h>

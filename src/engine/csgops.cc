@@ -32,7 +32,7 @@
 #include "csgnode.h"
 #include "builtin.h"
 #include <sstream>
-#include <assert.h>
+#include <cassert>
 
 class CsgModule : public AbstractModule
 {

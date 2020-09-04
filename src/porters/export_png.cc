@@ -2,7 +2,7 @@
 #include "../common/printutils.h"
 #include "../renderer/OffscreenView.h"
 #include "../engine/CsgInfo.h"
-#include <stdio.h>
+#include <cstdio>
 #include "../engine/math/polyset.h"
 #include "../renderer/rendersettings.h"
 

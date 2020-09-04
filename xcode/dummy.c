@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 OpenSCAD. All rights reserved.
 //
 
-#include <stdio.h>
+#include <cstdio>
 
 int main(int argc, const char * argv[])
 {

@@ -1,5 +1,5 @@
 #include "ErrorLog.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "MainWindow.h"
 #include <boost/filesystem.hpp>
 

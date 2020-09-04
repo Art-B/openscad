@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <cstdlib>
 #include <iomanip>
 #include "boost-utils.h"
 #include "PlatformUtils.h"

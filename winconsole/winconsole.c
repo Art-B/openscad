@@ -48,8 +48,8 @@ Fix printing of unicode on console.
 #include <process.h>
 #include <io.h>
 #include <fcntl.h>
-/*#include <stdio.h>*/
-#include <string.h>
+/*#include <cstdio>*/
+#include <cstring>
 
 // manage MS Windows error codes
 // Do not use fprintf() etc. due to call from thread.

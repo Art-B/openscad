@@ -1,7 +1,7 @@
 #include "import.h"
 #include "../common/printutils.h"
 #include "../engine/AST.h"
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 
 #ifdef ENABLE_CGAL
 #include "../engine/CGAL_Nef_polyhedron.h"

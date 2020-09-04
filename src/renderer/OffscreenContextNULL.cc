@@ -8,7 +8,7 @@ and can be compiled on a system without OpenGL.
 #include <vector>
 
 #include "OffscreenContext.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "imageutils.h"
 
 #include <map>

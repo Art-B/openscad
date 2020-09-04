@@ -189,8 +189,8 @@ const std::string PlatformUtils::sysinfo(bool extended)
 	return result;
 }
 
-#include <io.h>
-#include <stdio.h>
+#include <cio>
+#include <cstdio>
 #include <fstream>
 
 // attach to parent console if standard IO handles not available

@@ -38,7 +38,7 @@
 #include <assert.h>
 #include <boost/lexical_cast.hpp>
 #include <boost/filesystem.hpp>
-#include "boost-utils.h"
+#include "common/boost-utils.h"
 namespace fs = boost::filesystem;
 
 //isatty for visual c++ and mingw-cross-env

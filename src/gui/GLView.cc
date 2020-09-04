@@ -7,7 +7,7 @@
 #include "../renderer/renderer.h"
 #include "../engine/math/degree_trig.h"
 #include <cmath>
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 #ifdef _WIN32
 #include <GL/wglew.h>
 #elif !defined(__APPLE__)

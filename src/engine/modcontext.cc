@@ -8,7 +8,7 @@
 #include "ModuleCache.h"
 #include <cmath>
 #include <memory>
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 #ifdef DEBUG
 #include <boost/format.hpp>
 #endif

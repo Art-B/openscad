@@ -37,10 +37,10 @@
 #include <sys/types.h>
 #include <map>
 #include <fstream>
-#include <assert.h>
+#include <cassert>
 #include <libxml/xmlreader.h>
 #include <boost/filesystem.hpp>
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 
 static const std::string text_node("#text");
 static const std::string object("/amf/object");

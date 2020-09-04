@@ -32,7 +32,7 @@
 #include "../common/printutils.h"
 #include <cctype>
 #include <sstream>
-#include <assert.h>
+#include <cassert>
 #include <iterator>
 #include <unordered_map>
 #include <boost/algorithm/string/case_conv.hpp>

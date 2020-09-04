@@ -29,7 +29,7 @@
 #include "evalcontext.h"
 #include <cstdint>
 #include <cmath>
-#include <assert.h>
+#include <cassert>
 #include <sstream>
 #include <algorithm>
 #include <typeinfo>
@@ -40,7 +40,7 @@
 #include "feature.h"
 #include "../common/printutils.h"
 #include <boost/bind.hpp>
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 #include <boost/assign/std/vector.hpp>
 using namespace boost::assign; // bring 'operator+=()' into scope
 

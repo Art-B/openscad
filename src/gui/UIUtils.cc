@@ -35,7 +35,7 @@
 #include "qtgettext.h"
 #include "../common/PlatformUtils.h"
 #include "QSettingsCached.h"
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 
 
 #include <boost/property_tree/ptree.hpp>

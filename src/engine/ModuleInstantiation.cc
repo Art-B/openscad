@@ -5,7 +5,7 @@
 #include "exceptions.h"
 #include "../common/printutils.h"
 #include <boost/filesystem.hpp>
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 namespace fs = boost::filesystem;
 
 ModuleInstantiation::~ModuleInstantiation()

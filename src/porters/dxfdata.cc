@@ -33,7 +33,7 @@
 #include "../engine/calc.h"
 
 #include <fstream>
-#include <assert.h>
+#include <cassert>
 #include <unordered_map>
 #include <boost/lexical_cast.hpp>
 #include <boost/algorithm/string.hpp>

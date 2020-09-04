@@ -2,7 +2,7 @@
 
 #include "qtgettext.h"
 #include "ui_ErrorLog.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include <QStandardItemModel>
 #include "editor.h"
 

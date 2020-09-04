@@ -2,7 +2,7 @@
 #include "common/printutils.h"
 #include <string>
 #include <sstream>
-#include <stdlib.h> // for system()
+#include <cstdlib> // for system()
 #include <unordered_set>
 #include <boost/regex.hpp>
 #include <boost/filesystem.hpp>

@@ -41,7 +41,7 @@
 #ifndef _MSC_VER
 #include <getopt.h>
 #endif
-#include <assert.h>
+#include <cassert>
 #include <iostream>
 #include <sstream>
 #include <fstream>

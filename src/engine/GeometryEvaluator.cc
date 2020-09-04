@@ -29,7 +29,7 @@
 #include "math/degree_trig.h"
 #include <ciso646> // C alternative tokens (xor)
 #include <algorithm>
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 
 #pragma push_macro("NDEBUG")
 #undef NDEBUG

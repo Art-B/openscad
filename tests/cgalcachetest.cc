@@ -26,7 +26,7 @@
 
 #include "tests-common.h"
 #include "openscad.h"
-#include "printutils.h"
+#include "../common/printutils.h"
 #include "parsersettings.h"
 #include "node.h"
 #include "module.h"
@@ -46,7 +46,7 @@
 #include <getopt.h>
 #endif
 #include <iostream>
-#include <assert.h>
+#include <cassert>
 #include <sstream>
 
 #include <boost/filesystem.hpp>

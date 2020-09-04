@@ -28,7 +28,7 @@
 #include "CGALCache.h"
 #include "math/polyset.h"
 #include "math/Polygon2d.h"
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 #ifdef ENABLE_CGAL
 #include "CGAL_Nef_polyhedron.h"
 #endif // ENABLE_CGAL

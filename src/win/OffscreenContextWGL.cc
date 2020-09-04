@@ -16,8 +16,8 @@ For more info:
 #include <vector>
 
 #include "../renderer/OffscreenContext.h"
-#include "printutils.h"
-#include "imageutils.h"
+#include "../common/printutils.h"
+#include "../renderer/imageutils.h"
 #include "../renderer/system-gl.h"
 #include "fbo.h"
 

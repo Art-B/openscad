@@ -33,7 +33,7 @@
 #include "builtin.h"
 #include "math/polyset.h"
 #include "handle_dep.h"
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 #include <sstream>
 #include <boost/assign/std/vector.hpp>
 using namespace boost::assign; // bring 'operator+=()' into scope

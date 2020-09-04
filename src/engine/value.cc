@@ -25,7 +25,7 @@
  */
 
 #include <cmath>
-#include <assert.h>
+#include <cassert>
 #include <sstream>
 #include <boost/format.hpp>
 #include <boost/filesystem.hpp>
@@ -44,7 +44,7 @@
 #include "double-conversion/double-conversion.h"
 #include "double-conversion/utils.h"
 #include "double-conversion/ieee.h"
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 
 namespace fs=boost::filesystem;
 using boost::adaptors::transformed;

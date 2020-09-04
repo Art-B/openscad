@@ -10,8 +10,8 @@ not usable for cross-build situations.
 */
 
 #include <cstddef>
-#include <unistd.h>
-#include <stdio.h>
+#include <cunistd>
+#include <cstdio>
 
 #define PREQUOTE(x) #x
 #define QUOTE(x) PREQUOTE(x)

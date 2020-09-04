@@ -33,7 +33,7 @@
 #include "libsvg/libsvg.h"
 #include "../engine/clipper-utils.h"
 #include "../engine/AST.h"
-#include "boost-utils.h"
+#include "../common/boost-utils.h"
 
 namespace {
 

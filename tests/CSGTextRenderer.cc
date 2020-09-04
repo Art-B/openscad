@@ -11,7 +11,7 @@
 
 #include <sstream>
 #include <iostream>
-#include <assert.h>
+#include <cassert>
 
 bool CSGTextRenderer::isCached(const AbstractNode &node)
 {
