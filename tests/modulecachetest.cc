@@ -26,17 +26,17 @@
 
 #include "tests-common.h"
 #include "openscad.h"
-#include "parsersettings.h"
-#include "node.h"
-#include "module.h"
-#include "ModuleInstantiation.h"
-#include "builtincontext.h"
-#include "FileModule.h"
-#include "value.h"
-#include "export.h"
-#include "builtin.h"
-#include "Tree.h"
-#include "stackcheck.h"
+#include "engine/parsersettings.h"
+#include "engine/node.h"
+#include "engine/module.h"
+#include "engine/ModuleInstantiation.h"
+#include "engine/builtincontext.h"
+#include "engine/FileModule.h"
+#include "engine/value.h"
+#include "porters/export.h"
+#include "engine/builtin.h"
+#include "engine/Tree.h"
+#include "engine/stackcheck.h"
 
 #ifndef _MSC_VER
 #include <getopt.h>
@@ -48,7 +48,7 @@
 
 #include <boost/filesystem.hpp>
 namespace fs = boost::filesystem;
-#include "../common/PlatformUtils.h"
+#include "common/PlatformUtils.h"
 
 std::string commandline_commands;
 std::string currentdir;

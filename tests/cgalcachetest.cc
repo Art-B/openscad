@@ -26,21 +26,21 @@
 
 #include "tests-common.h"
 #include "openscad.h"
-#include "../common/printutils.h"
-#include "parsersettings.h"
-#include "node.h"
-#include "module.h"
-#include "ModuleInstantiation.h"
-#include "builtincontext.h"
-#include "FileModule.h"
-#include "value.h"
-#include "export.h"
-#include "builtin.h"
-#include "Tree.h"
-#include "CGAL_Nef_polyhedron.h"
-#include "GeometryEvaluator.h"
-#include "CGALCache.h"
-#include "stackcheck.h"
+#include "common/printutils.h"
+#include "engine/parsersettings.h"
+#include "engine/node.h"
+#include "engine/module.h"
+#include "engine/ModuleInstantiation.h"
+#include "engine/builtincontext.h"
+#include "engine/FileModule.h"
+#include "engine/value.h"
+#include "porters/export.h"
+#include "engine/builtin.h"
+#include "engine/Tree.h"
+#include "engine/CGAL_Nef_polyhedron.h"
+#include "engine/GeometryEvaluator.h"
+#include "engine/CGALCache.h"
+#include "engine/stackcheck.h"
 
 #ifndef _MSC_VER
 #include <getopt.h>
@@ -54,7 +54,7 @@ namespace fs = boost::filesystem;
 
 #include <boost/program_options.hpp>
 namespace po = boost::program_options;
-#include "../common/PlatformUtils.h"
+#include "common/PlatformUtils.h"
 
 std::string commandline_commands;
 std::string currentdir;

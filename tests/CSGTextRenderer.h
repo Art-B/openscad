@@ -1,9 +1,9 @@
 #ifndef CSGTEXTRENDERER_H_
 #define CSGTEXTRENDERER_H_
 
-#include "NodeVisitor.h"
+#include "engine/NodeVisitor.h"
 #include "CSGTextCache.h"
-#include "enums.h"
+#include "engine/enums.h"
 
 #include <map>
 #include <list>

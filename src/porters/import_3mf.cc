@@ -53,7 +53,7 @@ const std::string get_lib3mf_version() {
 }
 
 #ifdef ENABLE_CGAL
-#include "cgalutils.h"
+#include "engine/cgalutils.h"
 #endif
 
 typedef std::list<std::shared_ptr<PolySet>> polysets_t;

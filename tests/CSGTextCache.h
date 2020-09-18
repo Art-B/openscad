@@ -1,7 +1,7 @@
 #ifndef CSGTEXTCACHE_H_
 #define CSGTEXTCACHE_H_
 
-#include "Tree.h"
+#include "engine/Tree.h"
 #include <string>
 #include <boost/unordered_map.hpp>
 

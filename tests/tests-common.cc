@@ -1,7 +1,7 @@
 #include "tests-common.h"
 #include "openscad.h"
-#include "FileModule.h"
-#include "handle_dep.h"
+#include "engine/FileModule.h"
+#include "engine/handle_dep.h"
 
 #include <boost/filesystem.hpp>
 

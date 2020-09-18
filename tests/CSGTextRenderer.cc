@@ -3,11 +3,11 @@
 #include <string>
 #include <map>
 #include <list>
-#include "state.h"
-#include "ModuleInstantiation.h"
+#include "engine/math/state.h"
+#include "engine/ModuleInstantiation.h"
 
-#include "csgops.h"
-#include "transformnode.h"
+#include "engine/csgops.h"
+#include "engine/transformnode.h"
 
 #include <sstream>
 #include <iostream>

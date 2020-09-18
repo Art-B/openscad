@@ -37,9 +37,9 @@ using namespace NMR;
 
 #include <algorithm>
 
-#include "CGAL_Nef_polyhedron.h"
-#include "cgal.h"
-#include "cgalutils.h"
+#include "../engine/CGAL_Nef_polyhedron.h"
+#include "../engine/cgal.h"
+#include "../engine/cgalutils.h"
 
 static uint32_t lib3mf_write_callback(const char *data, uint32_t bytes, std::ostream *stream)
 {
