@@ -464,7 +464,9 @@ set(CORE_SOURCES
   src/engine/stackcheck.h
   src/engine/surface.cc
   src/engine/svg.cc
-  src/libsvg/text.cc
+  src/engine/TextModule.h
+  src/engine/TextModule.cc
+  src/engine/text.cc
   src/engine/transform.cc
   src/engine/value.cc
   src/gui/version.cc

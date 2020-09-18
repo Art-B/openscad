@@ -330,6 +330,8 @@ HEADERS += src/gui/version_check.h \
            src/engine/colornode.h \
            src/engine/rendernode.h \
            src/engine/textnode.h \
+           src/engine/TextModule.h \
+           src/engine/TextModule.cc \
            src/gui/version.h \
            src/openscad.h \
            src/engine/handle_dep.h \
@@ -457,6 +459,7 @@ SOURCES += \
            src/engine/surface.cc \
            src/engine/control.cc \
            src/renderer/render.cc \
+           src/engine/TextModule.cc \
            src/engine/text.cc \
            src/porters/dxfdata.cc \
            src/porters/dxfdim.cc \
